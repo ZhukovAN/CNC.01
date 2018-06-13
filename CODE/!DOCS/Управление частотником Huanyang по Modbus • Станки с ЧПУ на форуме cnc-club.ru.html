@@ -1,0 +1,1951 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0054)http://www.cnc-club.ru/forum/viewtopic.php?f=16&t=5892 -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ru-ru" xml:lang="ru-ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="theme-color" content="#0889CA">
+
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-language" content="ru-ru">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="icon" href="http://www.cnc-club.ru/forum/images/custom/cnc-club%20fav.png">
+
+<title>Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru </title>
+
+<link rel="alternate" type="application/atom+xml" title="Канал - cnc-club.ru" href="http://cnc-club.ru/forum/feed.php"><link rel="alternate" type="application/atom+xml" title="Канал - Новости" href="http://cnc-club.ru/forum/feed.php?mode=news"><link rel="alternate" type="application/atom+xml" title="Канал - Все форумы" href="http://cnc-club.ru/forum/feed.php?mode=forums"><link rel="alternate" type="application/atom+xml" title="Канал - { FEED_TOPICS_NEW }" href="http://cnc-club.ru/forum/feed.php?mode=topics"><link rel="alternate" type="application/atom+xml" title="Канал - { FEED_TOPICS_ACTIVE }" href="http://cnc-club.ru/forum/feed.php?mode=topics_active"><link rel="alternate" type="application/atom+xml" title="Канал - Форум - Windows / Mach" href="http://cnc-club.ru/forum/feed.php?f=16"><link rel="alternate" type="application/atom+xml" title="Канал - Тема - Управление частотником Huanyang по Modbus" href="http://cnc-club.ru/forum/feed.php?f=16&amp;t=5892">
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<script type="text/javascript" async="" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/watch.js.Без названия"></script><script async="" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/analytics.js.Без названия"></script><script type="text/javascript" src="http://an.yandex.ru/system/context.js" async=""></script><script type="text/javascript">
+// <![CDATA[
+	/* Replaced by MOD */
+	var collapse_view = 'Свернуть';
+	var expand_view = 'Развернуть'; 
+	var jump_page = 'Введите номер страницы, на которую хотите перейти:';
+	var on_page = '1';
+	var per_page = '20';
+	var base_url = './viewtopic.php?f=16&amp;t=5892';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=cnc-club.ru';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/jquery-1.8.2.min.js.Без названия"></script>
+
+<script type="text/javascript" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/styleswitcher.js.Без названия"></script>
+<script type="text/javascript" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/forum_fn.js.Без названия"></script>
+<script type="text/javascript" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/highlight.pack.js.Без названия"></script> 
+<script type="text/javascript" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/editor.js.Без названия"></script>
+<script type="text/javascript" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/jquery.colorbox.js.Без названия"></script>
+<script type="text/javascript" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/jquery.hotkeys.js.Без названия"></script>
+
+
+<link href="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" disabled="">
+<link href="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/style.php" rel="stylesheet" type="text/css" media="screen, projection">
+
+<link href="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/normal.css" rel="stylesheet" type="text/css" title="A" disabled="">
+<link href="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/medium.css" rel="alternate stylesheet" type="text/css" title="A+" disabled="">
+<link href="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/large.css" rel="alternate stylesheet" type="text/css" title="A++" disabled="">
+<link href="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/only-attachments.css" rel="alternate stylesheet" type="text/css" title="only-attachments" disabled="">
+
+<link href="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/cnc-club.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/colorbox.css">
+
+
+<style type="text/css">.yandexform{display:none}</style><style type="text/css">.yaform,.yaform .yaform__form,.yaform .yaform__input,.yaform .yaform__input-text,.yaform .yaform__submit,.yaform .yaform__search-precise{font-size:12px!important;color:#000!important}.yaform .yaform__form{display:block}.yaform,.yaform .yaform__form,.yaform .yaform__input,.yaform .yaform__search-precise,.yaform .yaform__search-precise__radio,.yaform .yaform__gap,.yaform .yaform__gap-i{margin:0;padding:0}.yaform-holster{margin:0!important;padding:0!important}.yaform .yaform__gap-i{width:9em}.yaform .yaform__logo{width:52px;margin:0;padding:0 6px 0 0;text-decoration:none}.yaform .yaform__logo-img{width:52px;height:21px;margin:0;padding:0;border:0!important}.yaform .yaform__search{font-size:12px!important;width:100%}.yaform .yaform__search-input,.yaform .yaform__search-precise,.yaform .yaform__gap{border:0}.yaform .yaform__search-image{padding:0}.yaform .yaform__search-input{padding:6px}.yaform .yaform__search-input-layout,.yaform .yaform__search-input-layout-l,.yaform .yaform__search-input-layout-r{font-size:12px!important;padding:0;vertical-align:middle;border:0;border-collapse:collapse}.yaform .yaform__search-input-layout,.yaform .yaform__search-input-layout-l{width:100%}.yaform .yaform__search-precise{font-size:12px!important;padding:0 18px 5px 6px;text-align:left;vertical-align:top;color:#000}.yaform .yaform__search-precise-i{white-space:nowrap}.yaform .yaform__search-precise__radio{width:auto;margin:0 .3em 0 0;vertical-align:middle;background:none}.yaform .yaform__search-precise__label{margin:0 .4em 0 0;padding:0;vertical-align:middle}body .yaform .yaform__input-text{width:100%;margin:0!important;cursor:text;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;background-color:#fff;border:1px solid #7f9db9}.yaform .yaform__submit{display:block;width:auto;margin:0 0 0 5px}.yaform_arr{background-repeat:no-repeat;background-position:100% 50%}.yaform_arr .yaform__form{padding-right:24px}.yaform_arr .yaform__search-input{padding-right:3px}.yaform_default{position:relative;margin:0 0 0 65px!important;padding:0!important}.yaform_default .yaform__logo{position:absolute;top:4px;left:-60px}.yaform_simple{margin:0!important;padding:0!important}.yaform_simple .yaform__logo{display:block;margin:6px 0 0 6px}.yaform_hint{margin:0!important;padding:0!important}.yaform_hint .yaform__input-text_hint{background-repeat:no-repeat;background-position:.2em 50%}.yaform .yaform__submit_image{width:19px;height:15px;outline:none;cursor:pointer;border:0}.yaform .b-suggest{position:relative;margin:0;padding:0}.yaform .b-suggest-holster{position:absolute;width:100%;height:20em;margin:0;padding:0}.yaform .b-suggest-popup{margin:0;padding:0}.yaform .b-suggest-list{position:absolute;z-index:9999;overflow:hidden;min-width:10em;max-width:100%;margin:-1px 0 0 0;padding:0;list-style:none;background:#fff;border:1px solid #999;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px}.yaform .b-suggest-list{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}.yaform .b-suggest-list iframe{position:absolute;z-index:-1;width:100%;height:100%;background:#fff}.yaform .b-suggest-items{min-width:10em;margin:0;padding:0;list-style:none;background:#fff}.yaform .b-suggest-elem{display:block;margin:0;padding:.2em .5em;cursor:pointer;text-decoration:none;background:url()}html body .yaform .b-suggest-elem,html body .yaform .b-suggest-elem:link{color:#000!important}.yaform .b-suggest-elem:hover,html body .yaform .b-suggest-elem_state_hover{color:#f00!important;text-decoration:underline}.yaform .b-suggest-elem_nav:hover{color:#000;text-decoration:none}.yaform .b-suggest-elem_nav .link{color:#1a3dc1;text-decoration:underline}.yaform .b-suggest-elem_nav:hover .link{color:#f00}.yaform .b-suggest-elem_nav .info{color:#666;white-space:nowrap}.yaform .b-suggest-elem_num,.yaform .b-suggest-elem_num:hover{font-family:"Courier New",monospace;font-weight:bold;color:#060!important;text-decoration:none}.yaform .b-suggest-elem_num .info{border-bottom:1px dotted}.yaform .b-suggest-elem_selected{background:#fdedaf}.yaform .b-suggest-close{font:85% Verdana,sans-serif;margin:0;padding:0 .5em;text-align:right;line-height:1.5em;color:#fff;background:#999}#yandexform0 .yaform__submit_image{background:url(http://site.yandex.net/i/form/search.png) no-repeat}#yandexform0 .yaform__input-text_hint{background-image:url(http://site.yandex.net/i/form/yandex-hint.png)}#yandexform0 .yaform__form * { font-size:12px !important }#yandexform0 .yaform__search, #yandexform0 .yaform__search td, #yandexform0 .yaform__precise-i { background-color: #098dcf !important }#yandexform0 .yaform__search-precise__label { color:#000000 !important }</style><style type="text/css" id="ya_share_style">.b-share-popup-wrap{z-index:1073741823;position:absolute;width:500px}.b-share-popup{position:absolute;z-index:1073741823;border:1px solid #888;background:#FFF;color:#000}.b-share-popup-wrap .b-share-popup_down{top:0}.b-share-popup-wrap .b-share-popup_up{bottom:0}.b-share-popup-wrap_state_hidden{position:absolute!important;top:-9999px!important;right:auto!important;bottom:auto!important;left:-9999px!important;visibility:hidden!important}.b-share-popup,x:nth-child(1){border:0;padding:1px!important}@media all and (resolution=0){.b-share-popup,x:nth-child(1),x:-o-prefocus{padding:0!important;border:1px solid #888}}.b-share-popup__i{display:-moz-inline-box;display:inline-block;padding:5px 0!important;overflow:hidden;vertical-align:top;white-space:nowrap;visibility:visible;background:#FFF;-webkit-box-shadow:0 2px 9px rgba(0,0,0,.6);-moz-box-shadow:0 2px 9px rgba(0,0,0,.6);box-shadow:0 2px 9px rgba(0,0,0,.6)}.b-share-popup__item{font:1em/1.25em Arial,sans-serif;display:block;padding:5px 15px!important;white-space:nowrap;background:#FFF}.b-share-popup__item,a.b-share-popup__item:link,a.b-share-popup__item:visited{text-decoration:none!important;border:0!important}a.b-share-popup__item{cursor:pointer}a.b-share-popup__item .b-share-popup__item__text{display:inline;text-decoration:underline;color:#1A3DC1}a.b-share-popup__item:hover{word-spacing:0}a.b-share-popup__item:hover .b-share-popup__item__text{color:red;cursor:pointer}.b-share-popup__icon{display:-moz-inline-box;display:inline-block;margin:-3px 0 0;padding:0 5px 0 0!important;vertical-align:middle}.b-share-popup__icon_input{width:21px;height:16px;margin-top:-6px;padding:0!important}.b-share-popup__icon__input{margin-right:0;margin-left:2px;vertical-align:top}.b-share-popup__spacer{display:block;padding-top:10px!important}.b-share-popup__header{font:86%/1em Verdana,sans-serif;display:block;padding:10px 15px 5px!important;color:#999}.b-share-popup__header_first{padding-top:5px!important}.b-share-popup__input{font:86%/1em Verdana,sans-serif;display:block;padding:5px 15px!important;color:#999;text-align:left}.b-share-popup__input__input{font:1em/1em Verdana,sans-serif;display:block;width:10px;margin:5px 0 0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;resize:none;text-align:left;direction:ltr}.b-share-popup_down .b-share-popup_with-link .b-share-popup__input_link{position:absolute;top:5px;right:0;left:0}.b-share-popup_up .b-share-popup_with-link .b-share-popup__input_link{position:absolute;right:0;bottom:5px;left:0}.b-share-popup_down .b-share-popup_with-link{padding-top:55px!important}.b-share-popup_up .b-share-popup_with-link{padding-bottom:55px!important}.b-share-popup_down .b-share-popup_expandable .b-share-popup__main{padding-bottom:25px!important}.b-share-popup_up .b-share-popup_expandable .b-share-popup__main{padding-top:25px!important}.b-share-popup_down .b-share-popup_yandexed{padding-bottom:10px!important}.b-share-popup_up .b-share-popup_yandexed{padding-top:10px!important}.b-share-popup__yandex{position:absolute;right:4px;bottom:2px;font:78.125%/1em Verdana,sans-serif;padding:3px!important;background:0 0}a.b-share-popup__yandex:link,a.b-share-popup__yandex:visited{color:#C6C5C5;text-decoration:none}a.b-share-popup__yandex:link:hover,a.b-share-popup__yandex:visited:hover{color:red;text-decoration:underline}.b-share-popup_up .b-share-popup__yandex{top:2px;bottom:auto}.b-share-popup_expandable .b-share-popup__yandex{right:auto;left:4px}.b-share-popup_to-right .b-share-popup_expandable .b-share-popup__yandex{right:4px;left:auto}.b-share-popup__expander .b-share-popup__item{position:absolute;bottom:5px;font:86%/1em Verdana,sans-serif;margin:10px 0 0;padding:5px 10px!important;cursor:pointer;color:#999;background:0 0}.b-share-popup_to-right,.b-share-popup_to-right .b-share-popup__expander{direction:rtl}.b-share-popup_to-right .b-share-popup__expander .b-share-popup__icon{padding:0 0 0 5px!important}.b-share-popup_up .b-share-popup__expander .b-share-popup__item{top:-5px;bottom:auto}.b-share-popup__expander .b-share-popup__item:hover .b-share-popup__item__text{text-decoration:underline}.b-share-popup__expander .b-ico_action_rarr,.b-share-popup_to-right .b-share-popup__expander .b-ico_action_larr,.b-share-popup_full .b-share-popup__expander .b-ico_action_larr,.b-share-popup_to-right .b-share-popup_full .b-share-popup__expander .b-ico_action_rarr,.b-share-popup__expander .b-share-popup__item__text_collapse,.b-share-popup_full .b-share-popup__item__text_expand{display:none}.b-share-popup_to-right .b-share-popup__expander .b-ico_action_rarr,.b-share-popup_full .b-share-popup__item__text_collapse,.b-share-popup_full .b-share-popup__expander .b-ico_action_rarr,.b-share-popup_to-right .b-share-popup_full .b-share-popup__expander .b-ico_action_larr{display:inline}.b-ico_action_rarr,.b-ico_action_larr{width:8px;height:7px;border:0}.b-share-popup__main,.b-share-popup__extra{direction:ltr;vertical-align:bottom;text-align:left}.b-share-popup_down .b-share-popup__main,.b-share-popup_down .b-share-popup__extra{vertical-align:top}.b-share-popup__main{display:-moz-inline-stack;display:inline-block}.b-share-popup__extra{display:none;margin:0 -10px 0 0}.b-share-popup_full .b-share-popup__extra{display:-moz-inline-stack;display:inline-block}.b-share-popup_to-right .b-share-popup__extra{margin:0 0 0 -10px}.b-share-popup__tail{position:absolute;width:21px;height:10px;margin:0 0 0 -11px}.b-share-popup_down .b-share-popup__tail{top:-10px;background:url("//yastatic.net/share/static/b-share-popup_down__tail.gif") 0 0 no-repeat}.b-share-popup_up .b-share-popup__tail{bottom:-10px;background:url("//yastatic.net/share/static/b-share-popup_up__tail.gif") 0 0 no-repeat}.b-share-popup_down .b-share-popup__tail,x:nth-child(1){top:-9px;background-image:url("//yastatic.net/share/static/b-share-popup_down__tail.png")}.b-share-popup_up .b-share-popup__tail,x:nth-child(1){bottom:-9px;background-image:url("//yastatic.net/share/static/b-share-popup_up__tail.png")}@media all and (resolution=0){.b-share-popup_down .b-share-popup__tail,x:nth-child(1),x:-o-prefocus{top:-10px;background-image:url("//yastatic.net/share/static/b-share-popup_down__tail.gif")}.b-share-popup_up .b-share-popup__tail,x:nth-child(1),x:-o-prefocus{bottom:-10px;background-image:url("//yastatic.net/share/static/b-share-popup_up__tail.gif")}}.b-share-popup .b-share-popup_show_form_mail,.b-share-popup .b-share-popup_show_form_html{padding:0!important}.b-share-popup .b-share-popup_show_form_mail .b-share-popup__main,.b-share-popup .b-share-popup_show_form_html .b-share-popup__main,.b-share-popup .b-share-popup_show_form .b-share-popup__main,.b-share-popup .b-share-popup_show_form_mail .b-share-popup__extra,.b-share-popup .b-share-popup_show_form_html .b-share-popup__extra,.b-share-popup .b-share-popup_show_form .b-share-popup__extra{height:15px;padding:0!important;overflow:hidden;visibility:hidden}.b-share-popup_show_form_mail .b-share-popup__expander,.b-share-popup_show_form_html .b-share-popup__expander,.b-share-popup_show_form .b-share-popup__expander,.b-share-popup_show_form_mail .b-share-popup__input_link,.b-share-popup_show_form_html .b-share-popup__input_link,.b-share-popup_show_form .b-share-popup__input_link{display:none}.b-share-popup__form{position:relative;display:none;overflow:hidden;padding:5px 0 0!important;margin:0 0 -15px;white-space:normal}.b-share-popup_show_form_mail .b-share-popup__form_mail,.b-share-popup_show_form_html .b-share-popup__form_html,.b-share-popup_show_form .b-share-popup__form{display:block}.b-share-popup__form__link{padding:5px!important;margin:0 0 5px 10px;text-decoration:underline;cursor:pointer;color:#1A3DC1}.b-share-popup__form__link,.b-share-popup__form__button{font:86%/1.4545em Verdana,sans-serif;float:left;display:inline}.b-share-popup__form__button{margin:5px 0 0 15px}.b-share-popup__form__close{font:86%/1.4545em Verdana,sans-serif;float:right;display:inline;padding:5px!important;margin:0 10px 5px 0;cursor:pointer;color:#999}a.b-share-popup__form__link:hover,a.b-share-popup__form__close:hover{text-decoration:underline;color:red}.b-share-popup_font_fixed .b-share-popup__item{font-size:12.8px}.b-share-popup_font_fixed .b-share-popup__header,.b-share-popup_font_fixed .b-share-popup__input,.b-share-popup_font_fixed .b-share-popup__expander .b-share-popup__item,.b-share-popup_font_fixed .b-share-popup__form__link,.b-share-popup_font_fixed .b-share-popup__form__button,.b-share-popup_font_fixed .b-share-popup__form__close{font-size:11px}.b-share-popup_font_fixed .b-share-popup__yandex{font-size:10px}.b-share-form-button{font:86%/17px Verdana,Arial,sans-serif;display:-moz-inline-box;display:inline-block;position:relative;height:19px;margin:0 3px;padding:0 4px;cursor:default;white-space:nowrap;text-decoration:none!important;color:#000!important;border:none;outline:none;background:url("//yastatic.net/share/static/b-share-form-button.png") 0 -20px repeat-x}.b-share-form-button:link:hover,.b-share-form-button:visited:hover{color:#000!important}.b-share-form-button__before,.b-share-form-button__after{position:absolute;width:3px;height:19px;background:url("//yastatic.net/share/static/b-share-form-button.png")}.b-share-form-button__before{margin-left:-7px}.b-share-form-button__after{margin-left:4px;background-position:-3px 0}.b-share-form-button::-moz-focus-inner{border:none}button.b-share-form-button .b-share-form-button__before,button.b-share-form-button .b-share-form-button__after{margin-top:-1px}@-moz-document url-prefix(){button.b-share-form-button .b-share-form-button__after{margin-top:-2px;margin-left:6px}button.b-share-form-button .b-share-form-button__before{margin-top:-2px;margin-left:-9px}}SPAN.b-share-form-button:hover,.b-share-form-button_state_hover{background-position:0 -60px}SPAN.b-share-form-button:hover .b-share-form-button__before,.b-share-form-button_state_hover .b-share-form-button__before{background-position:0 -40px}SPAN.b-share-form-button:hover .b-share-form-button__after,.b-share-form-button_state_hover .b-share-form-button__after{background-position:-3px -40px}.b-share-form-button_state_pressed,.b-share-form-button_state_pressed .b-share-form-button_share{background-position:0 -100px!important}.b-share-form-button_state_pressed .b-share-form-button__before{background-position:0 -80px!important}.b-share-form-button_state_pressed .b-share-form-button__after{background-position:-3px -80px!important}button.b-share-form-button_state_pressed{overflow:visible}.b-share-form-button_icons{position:relative;padding:0;background-position:0 -20px!important}.b-share-form-button_icons .b-share-form-button__before{left:0;margin-left:-3px;background-position:0 0!important}.b-share-form-button_icons .b-share-form-button__after{z-index:-1;margin-left:0;background-position:-3px 0!important}.b-share-form-button_icons .b-share__handle{padding:2px!important}.b-share-form-button_icons .b-share__handle_more{position:relative;padding-right:6px!important;margin-right:-4px}.b-share-form-button_icons .b-share-icon{opacity:.5;background-image:url("//yastatic.net/share/static/b-share-icon_size_14.png")}.b-share-form-button_icons A.b-share__handle:hover .b-share-icon{opacity:1}.b-share{font:86%/1.4545em Arial,sans-serif;display:-moz-inline-box;display:inline-block;padding:1px 3px 1px 4px!important;vertical-align:middle}.b-share .b-share-form-button{font-size:1em}.b-share__text .b-share-icon{margin:0 5px 0 0;border:none}.b-share__text{margin-right:5px}.b-share__handle{float:left;height:16px;padding:5px 3px 5px 2px!important;cursor:pointer;text-align:left;text-decoration:none!important}.b-share__handle_cursor_default{cursor:default}.b-share__handle .b-share-form-button{margin-top:-2px}.b-share__hr{display:none;float:left;width:1px;height:26px;margin:0 3px 0 2px}a.b-share__handle:hover .b-share__text{text-decoration:underline;color:red}.b-share_bordered{padding:0 2px 0 3px!important;border:1px solid #E4E4E4;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}.b-share_bordered .b-share__hr{display:inline;background:#E4E4E4}.b-share_link{margin:-8px 0}a.b-share_link{margin:0}.b-share_link .b-share__text{text-decoration:underline;color:#1A3DC1}.b-share-form-button_share{padding-left:26px!important;vertical-align:top}.b-share-form-button_share .b-share-form-button__before{margin-left:-29px}.b-share-form-button_share .b-share-form-button__icon{position:absolute;width:20px;height:17px;margin:1px 0 0 -23px;background:url("//yastatic.net/share/static/b-share-form-button_share__icon.png") 0 0 no-repeat}.b-share-pseudo-link{border-bottom:1px dotted;cursor:pointer;text-decoration:none!important}.b-share_font_fixed{font-size:11px}.b-share__handle_more{font-size:9px;margin-top:-1px;color:#7B7B7B}A.b-share__handle_more:hover{color:#000}.b-share__group{float:left}.b-share-icon{float:left;display:inline;overflow:hidden;width:16px;height:16px;padding:0!important;vertical-align:top;border:0;background:url("//yastatic.net/share/static/b-share-icon.png") 0 99px no-repeat}.b-share-icon_vkontakte,.b-share-icon_custom{background-position:0 0}.b-share-icon_yaru,.b-share-icon_yaru_photo,.b-share-icon_yaru_wishlist{background-position:0 -17px}.b-share-icon_lj{background-position:0 -34px}.b-share-icon_twitter{background-position:0 -51px}.b-share-icon_facebook{background-position:0 -68px}.b-share-icon_moimir{background-position:0 -85px}.b-share-icon_friendfeed{background-position:0 -102px}.b-share-icon_mail{background-position:0 -119px}.b-share-icon_html{background-position:0 -136px}.b-share-icon_postcard{background-position:0 -153px}.b-share-icon_odnoklassniki{background-position:0 -170px}.b-share-icon_blogger{background-position:0 -187px}.b-share-icon_delicious{background-position:0 -221px}.b-share-icon_gbuzz{background-position:0 -238px}.b-share-icon_linkedin{background-position:0 -255px}.b-share-icon_myspace{background-position:0 -272px}.b-share-icon_evernote{background-position:0 -289px}.b-share-icon_digg{background-position:0 -306px}.b-share-icon_juick{background-position:0 -324px}.b-share-icon_moikrug{background-position:0 -341px}.b-share-icon_yazakladki{background-position:0 -358px}.b-share-icon_liveinternet{background-position:0 -375px}.b-share-icon_tutby{background-position:0 -392px}.b-share-icon_diary{background-position:0 -409px}.b-share-icon_gplus{background-position:0 -426px}.b-share-icon_pocket{background-position:0 -443px}.b-share-icon_surfingbird{background-position:0 -460px}.b-share-icon_pinterest{background-position:0 -477px}.b-share-icon_renren{background-position:0 0}.b-share-icon_renren,.b-share-icon_sina_weibo{background:url("//yastatic.net/share/static/b-share-icon__china.png") no-repeat}.b-share-icon_sina_weibo{background-position:-18px 0}.b-share-icon_qzone{background-position:-36px 0}.b-share-icon_qzone,.b-share-icon_tencent_weibo{background:url("//yastatic.net/share/static/b-share-icon__china.png") no-repeat}.b-share-icon_tencent_weibo{background-position:-54px 0}.b-share_theme_dark .b-share-icon{background:url("//yastatic.net/share/static/b-share-icons__theme_dark.png") 99px 0 no-repeat}.b-share_theme_dark .b-share-icon_odnoklassniki{background-position:-4px -3px}.b-share_theme_dark .b-share-icon_vkontakte{background-position:-24px -3px}.b-share_theme_dark .b-share-icon_twitter{background-position:-44px -3px}.b-share_theme_dark .b-share-icon_facebook{background-position:-64px -3px}.b-share_theme_dark .b-share-icon_lj{background-position:-85px -3px}.b-share_theme_dark .b-share-icon_yaru{background-position:-105px -3px}.b-share_theme_dark .b-share-popup .b-share-icon_odnoklassniki,.b-share_theme_dark .b-share-icon_odnoklassniki:hover{background-position:-4px -28px}.b-share_theme_dark .b-share-popup .b-share-icon_vkontakte,.b-share_theme_dark .b-share-icon_vkontakte:hover{background-position:-24px -28px}.b-share_theme_dark .b-share-popup .b-share-icon_twitter,.b-share_theme_dark .b-share-icon_twitter:hover{background-position:-44px -28px}.b-share_theme_dark .b-share-popup .b-share-icon_facebook,.b-share_theme_dark .b-share-icon_facebook:hover{background-position:-64px -28px}.b-share_theme_dark .b-share-popup .b-share-icon_lj,.b-share_theme_dark .b-share-icon_lj:hover{background-position:-85px -28px}.b-share_theme_dark .b-share-popup .b-share-icon_yaru,.b-share_theme_dark .b-share-icon_yaru:hover{background-position:-105px -28px}.b-share_theme_dark .b-share-form-button_share .b-share-form-button__icon{background-image:url("//yastatic.net/share/static/b-share-form-button_share__icon_dark.png")}.b-share_theme_dark .b-share-form-button{color:#fff!important;opacity:.8}.b-share_theme_dark .b-share__handle:hover .b-share-form-button,.b-share_theme_dark .b-share-form-button:hover{opacity:1;cursor:pointer}.b-share_theme_dark .b-share-form-button,.b-share_theme_dark .b-share-form-button__before,.b-share_theme_dark .b-share-form-button__after{background:0 0}.b-share_theme_dark .b-share-popup__i{background-color:#333;border-radius:10px;-webkit-box-shadow:0 2px 9px rgba(255,255,255,.6);-moz-box-shadow:0 2px 9px rgba(255,255,255,.6);box-shadow:0 2px 9px rgba(255,255,255,.6)}.b-share_theme_dark .b-share__text{color:#AAA}.b-share_theme_dark .b-share-popup{color:#AAA;border-radius:10px;background-color:#333;background-color:rgba(50,50,50,.3)}.b-share_theme_dark .b-share-popup__item{background:0 0;color:#ccc}.b-share_theme_dark .b-share-popup .b-share-popup__item__text{color:#ccc}.b-share_theme_counter .b-share{display:inline-block;vertical-align:middle;white-space:nowrap}.b-share-counter{font:14px Arial,sans-serif;line-height:18px;display:none;float:left;margin:3px 6px 3px 3px;color:#fff}.b-share_theme_counter .b-share_type_small .b-share-counter{font-size:11px;line-height:14px;margin:2px 6px 2px 1px}.b-share_theme_counter .b-share-btn__counter .b-share-counter{display:block}.b-share-btn__counter{text-decoration:none}.b-share_theme_counter .b-share-btn__wrap{position:relative;float:left;margin-left:5px}.b-share_theme_counter .b-share_type_small .b-share-btn__wrap{margin-left:4px}.b-share_theme_counter .b-share-btn__wrap:first-child{margin-left:0}.b-share_theme_counter .b-share__link{display:inline-block;cursor:pointer;-webkit-border-radius:3px;border-radius:3px}.b-share_theme_counter .b-share_type_small .b-share__link{-webkit-border-radius:2px;border-radius:2px}.b-share_theme_counter .b-share-icon{display:block;float:left;width:24px;height:24px;background-image:url("//yastatic.net/share/static/b-share_counter_large.png");background-position:-20px 0}.b-share_theme_counter .b-share_type_small .b-share-icon{width:18px;height:18px;background-image:url("//yastatic.net/share/static/b-share_counter_small.png")}.b-share_theme_counter .b-share-icon_facebook{background-position:0 0}.b-share_theme_counter .b-share-btn__facebook{background-color:#3c5a98}.b-share_theme_counter .b-share-btn__facebook:hover{background-color:#30487a}.b-share_theme_counter .b-share-btn__facebook:active{border-top:2px solid #24365a;background-color:#334d81}.b-share_theme_counter .b-share-icon_moimir{background-position:0 -29px}.b-share_theme_counter .b-share-btn__moimir{background-color:#226eb7}.b-share_theme_counter .b-share-btn__moimir:hover{background-color:#1b5892}.b-share_theme_counter .b-share-btn__moimir:active{border-top:2px solid #14426d;background-color:#1d5e9c}.b-share_theme_counter .b-share-icon_vkontakte{background-position:0 -58px}.b-share_theme_counter .b-share-btn__vkontakte{background-color:#48729e}.b-share_theme_counter .b-share-btn__vkontakte:hover{background-color:#3a5b7e}.b-share_theme_counter .b-share-btn__vkontakte:active{border-top:2px solid #2b445e;background-color:#3d6186}.b-share_theme_counter .b-share-icon_twitter{background-position:0 -87px}.b-share_theme_counter .b-share-btn__twitter{background-color:#00aced}.b-share_theme_counter .b-share-btn__twitter:hover{background-color:#008abe}.b-share_theme_counter .b-share-btn__twitter:active{border-top:2px solid #00668d;background-color:#0092ca}.b-share_theme_counter .b-share-icon_odnoklassniki{background-position:0 -116px}.b-share_theme_counter .b-share-btn__odnoklassniki{background-color:#ff9f4d}.b-share_theme_counter .b-share-btn__odnoklassniki:hover{background-color:#cc7f3e}.b-share_theme_counter .b-share-btn__odnoklassniki:active{border-top:2px solid #975e2e;background-color:#d98742}.b-share_theme_counter .b-share-icon_gplus{background-position:0 -145px}.b-share_theme_counter .b-share-btn__gplus{background-color:#c25234}.b-share_theme_counter .b-share-btn__gplus:hover{background-color:#9b422a}.b-share_theme_counter .b-share-btn__gplus:active{border-top:2px solid #73311f;background-color:#a5462c}.b-share_theme_counter .b-share-icon_yaru{background-position:0 -174px}.b-share_theme_counter .b-share-btn__yaru{background-color:#d83933}.b-share_theme_counter .b-share-btn__yaru:hover{background-color:#ad2e29}.b-share_theme_counter .b-share-btn__yaru:active{border-top:2px solid #80221e;background-color:#b8312b}.b-share_theme_counter .b-share-icon_pinterest{background-position:0 -203px}.b-share_theme_counter .b-share-btn__pinterest{background-color:#cd1e27}.b-share_theme_counter .b-share-btn__pinterest:hover{background-color:#a4181f}.b-share_theme_counter .b-share-btn__pinterest:active{border-top:2px solid #7b1217;background-color:#ae1921}.b-share_theme_counter .b-share__link:active{height:22px}.b-share_theme_counter .b-share_type_small .b-share__link:active{height:16px}.b-share_theme_counter .b-share__link:active .b-share-icon,.b-share_theme_counter .b-share__link:active .b-share-counter{position:relative;top:-1px}.b-share_theme_counter .b-share__link::after{position:absolute;top:0;right:0;bottom:0;left:0;content:"";background-image:url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)}.b-share_theme_counter .b-share__handle{height:auto;padding:0!important}</style></head>
+
+<body id="phpbb" class="section-viewtopic ltr gid1  guest">
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div id="site-description">
+				<a href="http://www.cnc-club.ru/forum/index.php" title="Список форумов" id="logo">
+					<img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/cnc-club.ru logo tranparent.png" alt="" title="">
+					</a>
+				<h1><a href="http://www.cnc-club.ru/forum/index.php" title="Список форумов">cnc-club.ru</a></h1>
+				<p class="skiplink"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#start_here">Пропустить</a></p>
+			</div><div class="galery new" style="float:left;">
+				<div class="name">Новые изображения</div><a href="http://www.cnc-club.ru/forum/viewtopic.php?t=18354&amp;p=444266#p444266" onclick="$.get(&quot;/custom_scripts/forum_header_gallery.php?attach_id=140781&quot;);"><img style="border-width: 0;" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/thumb_8105_7552f84ce0306aa3e98dcad7b365466f"></a><a href="http://www.cnc-club.ru/forum/viewtopic.php?t=2204&amp;p=444264#p444264" onclick="$.get(&quot;/custom_scripts/forum_header_gallery.php?attach_id=140780&quot;);"><img style="border-width: 0;" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/29193_a0c84c8ee69f1558485503a5d2d86d6b"></a><a href="http://www.cnc-club.ru/forum/viewtopic.php?t=18354&amp;p=444261#p444261" onclick="$.get(&quot;/custom_scripts/forum_header_gallery.php?attach_id=140779&quot;);"><img style="border-width: 0;" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/thumb_83_c4c0f5265397700fa85b74e91a8a9663"></a><a href="http://www.cnc-club.ru/forum/viewtopic.php?t=18354&amp;p=444261#p444261" onclick="$.get(&quot;/custom_scripts/forum_header_gallery.php?attach_id=140778&quot;);"><img style="border-width: 0;" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/thumb_83_fe73dc67e61af5a47d2be832196c67d6"></a></div><div class="galery rand" style="float:left;">
+	        				<div class="name">Случайные изображения</div><a href="http://www.cnc-club.ru/forum/viewtopic.php?t=2068&amp;p=39239#p39239" onclick="$.get(&quot;/custom_scripts/forum_header_gallery.php?attach_id=8421&quot;);"><img style="border-width: 0;" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/thumb_53_9a05d50e80e3b975d76ead4635b2f77b"></a><a href="http://www.cnc-club.ru/forum/viewtopic.php?t=9921&amp;p=242684#p242684" onclick="$.get(&quot;/custom_scripts/forum_header_gallery.php?attach_id=66479&quot;);"><img style="border-width: 0;" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/thumb_9293_ce16a8455eb66e4a05337a4646321fa3"></a><a href="http://www.cnc-club.ru/forum/viewtopic.php?t=17198&amp;p=403147#p403147" onclick="$.get(&quot;/custom_scripts/forum_header_gallery.php?attach_id=126860&quot;);"><img style="border-width: 0;" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/thumb_23115_269a02f9a5303a11d42b1a852c288829"></a><a href="http://www.cnc-club.ru/forum/viewtopic.php?t=5870&amp;p=141966#p141966" onclick="$.get(&quot;/custom_scripts/forum_header_gallery.php?attach_id=98956&quot;);"><img style="border-width: 0;" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/thumb_10444_daceade15ef00912c0cc2f8400f41fb3"></a><a href="http://www.cnc-club.ru/forum/viewtopic.php?t=7377&amp;p=181071#p181071" onclick="$.get(&quot;/custom_scripts/forum_header_gallery.php?attach_id=45820&quot;);"><img style="border-width: 0;" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/thumb_4052_0e954c6f394db86a2f131fa7bfa8faba"></a><a href="http://www.cnc-club.ru/forum/viewtopic.php?t=5258&amp;p=256767#p256767" onclick="$.get(&quot;/custom_scripts/forum_header_gallery.php?attach_id=71847&quot;);"><img style="border-width: 0;" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/thumb_10009_62066df203c997952167606d384c891a"></a><a href="http://www.cnc-club.ru/forum/viewtopic.php?t=5248&amp;p=162882#p162882" onclick="$.get(&quot;/custom_scripts/forum_header_gallery.php?attach_id=39777&quot;);"><img style="border-width: 0;" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/thumb_10244_7c7d869b7db3ed1a2150ce79b9003e01"></a><!-- Generation time -0.620074 --></div>
+			<div id="right-box">
+				<div id="search-box">
+					
+						<div class="yaform-holster"><div class="yandexform yaform yaform_hint" onclick="return {&#39;bg&#39;: &#39;#098dcf&#39;, &#39;language&#39;: &#39;ru&#39;, &#39;encoding&#39;: &#39;&#39;, &#39;suggest&#39;: false, &#39;tld&#39;: &#39;ru&#39;, &#39;site_suggest&#39;: false, &#39;webopt&#39;: false, &#39;fontsize&#39;: 12, &#39;arrow&#39;: false, &#39;fg&#39;: &#39;#000000&#39;, &#39;logo&#39;: &#39;rb&#39;, &#39;websearch&#39;: false, &#39;type&#39;: 3}" id="yandexform0" style="display: block;"><form class="yaform__form" method="get" action="http://yandex.ru/sitesearch" target="_blank"><table class="yaform__search" cellpadding="0" cellspacing="0"><tbody><tr><td class="yaform__search-input"><table class="yaform__search-input-layout"><tbody><tr><td class="yaform__search-input-layout-l"><div class="yaform__input"><input name="text" value="" class="yaform__input-text yaform__input-text_hint"></div></td><td class="yaform__search-input-layout-r"><input type="hidden" name="searchid" value="1844118"><input type="hidden" name="l10n" value="ru"><input type="hidden" name="web" value="0"><input class="yaform__submit yaform__submit_image" type="submit" value=""></td></tr></tbody></table></td></tr><tr><td class="yaform__gap"><div class="yaform__gap-i"></div></td></tr></tbody></table></form></div></div><script type="text/javascript" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/form.js.Без названия" charset="utf-8"></script>
+					
+					
+
+				</div>
+
+				<!-- Google translate links -->
+				<div id="translate-box" style="float: right; clear: right; margin-top: 5px; margin-right: 5px;">
+					Translate using Google:
+						<a id="google-translate-gb" href="http://translate.google.com/translate?js=y&amp;ie=UTF-8&amp;layout=1&amp;eotf=1&amp;sl=ru&amp;tl=en&amp;u=http%3A//www.cnc-club.ru/forum/viewtopic.php%3Ff%3D16%26t%3D5892"><img width="16" height="11" style="vertical-align: middle;" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/gb.gif"></a>
+						<a id="google-translate-de" href="http://translate.google.com/translate?js=y&amp;ie=UTF-8&amp;layout=1&amp;eotf=1&amp;sl=ru&amp;tl=de&amp;u=http%3A//www.cnc-club.ru/forum/viewtopic.php%3Ff%3D16%26t%3D5892"><img width="16" height="11" style="vertical-align: middle;" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/de.gif"></a>
+						<a id="google-translate-ru" href="http://translate.google.com/translate?js=y&amp;ie=UTF-8&amp;layout=1&amp;eotf=1&amp;sl=en&amp;tl=ru&amp;u=http%3A//www.cnc-club.ru/forum/viewtopic.php%3Ff%3D16%26t%3D5892"><img width="16" height="11" style="vertical-align: middle;" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/ru.gif"></a>
+						<a id="google-translate-fr" href="http://translate.google.com/translate?js=y&amp;ie=UTF-8&amp;layout=1&amp;eotf=1&amp;sl=ru&amp;tl=fr&amp;u=http%3A//www.cnc-club.ru/forum/viewtopic.php%3Ff%3D16%26t%3D5892"><img width="16" height="11" style="vertical-align: middle;" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/fr.gif"></a>
+						<a id="google-translate-es" href="http://translate.google.com/translate?js=y&amp;ie=UTF-8&amp;layout=1&amp;eotf=1&amp;sl=ru&amp;tl=es&amp;u=http%3A//www.cnc-club.ru/forum/viewtopic.php%3Ff%3D16%26t%3D5892"><img width="16" height="11" style="vertical-align: middle;" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/es.gif"></a>
+						<script language="javascript">
+							var current_location = escape(document.location.href)
+							document.getElementById("google-translate-gb").href = "http://translate.google.com/translate?js=y&ie=UTF-8&layout=1&eotf=1&sl=ru&tl=en&u="+current_location;
+							document.getElementById("google-translate-de").href = "http://translate.google.com/translate?js=y&ie=UTF-8&layout=1&eotf=1&sl=ru&tl=de&u="+current_location;
+							document.getElementById("google-translate-ru").href = "http://translate.google.com/translate?js=y&ie=UTF-8&layout=1&eotf=1&sl=en&tl=ru&u="+current_location;
+							document.getElementById("google-translate-fr").href = "http://translate.google.com/translate?js=y&ie=UTF-8&layout=1&eotf=1&sl=ru&tl=fr&u="+current_location;
+							document.getElementById("google-translate-es").href = "http://translate.google.com/translate?js=y&ie=UTF-8&layout=1&eotf=1&sl=ru&tl=es&u="+current_location;
+						</script>
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="navbar">
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="http://www.cnc-club.ru/forum/index.php" accesskey="h">Список форумов</a>  <strong>‹</strong> <a href="http://www.cnc-club.ru/forum/viewforum.php?f=153">Системы ЧПУ</a> <strong>‹</strong> <a href="http://www.cnc-club.ru/forum/viewforum.php?f=16">Windows / Mach</a></li>
+				<li class="rightside">
+					<div class="yashare-auto-init" data-yasharel10n="ru" data-yasharetype="icon" data-yasharequickservices="yaru,vkontakte,facebook,twitter,gplus"><span class="b-share"><a class="b-share__handle" id="ya-share-0.8096862103108065-1528383604931" data-hdirection="" data-vdirection=""><img alt="" class="b-share-icon" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/b-share.png"></a><a rel="nofollow" target="_blank" title="ВКонтакте" class="b-share__handle b-share__link b-share-btn__vkontakte" href="https://share.yandex.net/go.xml?service=vkontakte&amp;url=http%3A%2F%2Fwww.cnc-club.ru%2Fforum%2Fviewtopic.php%3Ff%3D16%26t%3D5892&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC%20Huanyang%20%D0%BF%D0%BE%20Modbus%20%E2%80%A2%20%D0%A1%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%20%D1%81%20%D0%A7%D0%9F%D0%A3%20%D0%BD%D0%B0%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5%20cnc-club.ru" data-service="vkontakte"><span class="b-share-icon b-share-icon_vkontakte"></span></a><a rel="nofollow" target="_blank" title="Facebook" class="b-share__handle b-share__link b-share-btn__facebook" href="https://share.yandex.net/go.xml?service=facebook&amp;url=http%3A%2F%2Fwww.cnc-club.ru%2Fforum%2Fviewtopic.php%3Ff%3D16%26t%3D5892&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC%20Huanyang%20%D0%BF%D0%BE%20Modbus%20%E2%80%A2%20%D0%A1%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%20%D1%81%20%D0%A7%D0%9F%D0%A3%20%D0%BD%D0%B0%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5%20cnc-club.ru" data-service="facebook"><span class="b-share-icon b-share-icon_facebook"></span></a><a rel="nofollow" target="_blank" title="Twitter" class="b-share__handle b-share__link b-share-btn__twitter" href="https://share.yandex.net/go.xml?service=twitter&amp;url=http%3A%2F%2Fwww.cnc-club.ru%2Fforum%2Fviewtopic.php%3Ff%3D16%26t%3D5892&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC%20Huanyang%20%D0%BF%D0%BE%20Modbus%20%E2%80%A2%20%D0%A1%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%20%D1%81%20%D0%A7%D0%9F%D0%A3%20%D0%BD%D0%B0%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5%20cnc-club.ru" data-service="twitter"><span class="b-share-icon b-share-icon_twitter"></span></a><a rel="nofollow" target="_blank" title="Google Plus" class="b-share__handle b-share__link b-share-btn__gplus" href="https://share.yandex.net/go.xml?service=gplus&amp;url=http%3A%2F%2Fwww.cnc-club.ru%2Fforum%2Fviewtopic.php%3Ff%3D16%26t%3D5892&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC%20Huanyang%20%D0%BF%D0%BE%20Modbus%20%E2%80%A2%20%D0%A1%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%20%D1%81%20%D0%A7%D0%9F%D0%A3%20%D0%BD%D0%B0%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5%20cnc-club.ru" data-service="gplus"><span class="b-share-icon b-share-icon_gplus"></span></a></span></div> 
+				</li>
+				<li class="rightside"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="fontsizeup(); return false;" onkeypress="return fontsizeup(event);" class="fontsize" title="Изменить размер шрифта">Изменить размер шрифта</a></li>
+				<li class="rightside"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="change_colorbox_img_size(); return false;" class="colorbox_img_size small" title="Изменить размер изображений в colorbox"></a></li>
+				<li class="rightside"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="only_attachments(); return false;" class="only-attachments" title="{ CHANGE_ONLY_ATTACHMENTS }"></a></li>
+				
+				<li class="rightside"><a href="http://www.cnc-club.ru/forum/memberlist.php?mode=email&amp;t=5892" title="Сообщить другу" class="sendemail">Сообщить другу</a></li><li class="rightside"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892&amp;view=print" title="Версия для печати" accesskey="p" class="print">Версия для печати</a></li><!-- Added by MOD --><li class="rightside"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892&amp;mobile_style=on" title="Мобильная версия" accesskey="p" class="print" style="background-image: url(./styles/prosilver/theme/images/icon_mobile.gif)">Мобильная версия</a></li>				
+				<li class="center"><a class="wiki" href="http://cnc-club.ru/wiki/">Wiki</a></li>				
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				<li class="icon-faq"><a href="http://www.cnc-club.ru/forum/faq.php" title="Часто задаваемые вопросы">FAQ</a></li>
+				<li class="icon-register"><a href="http://www.cnc-club.ru/forum/ucp.php?mode=register">Регистрация</a></li>
+					<li class="icon-logout"><a href="http://www.cnc-club.ru/forum/ucp.php?mode=login" title="Вход" accesskey="x">Вход</a></li>
+				
+			</ul>
+		</div>
+
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+<div class="f16 t5892 fid tid"> 
+
+	<div class="left-col">
+		 &nbsp;
+	</div>
+	<div class="right-col">&nbsp;
+	</div>
+			<div class="ads"><div class="spacer">	<a href="http://www.sprut.ru/products-and-solutions/products/sprutcam/praktik-promo?utm_source=cncclub&amp;utm_medium=banner&amp;utm_campaign=banner" style="background-image:url(&quot;/forum/ads/img/SprutCam.png&quot;);" title="SprutCAM САМ фрезерная обработка"></a>	<a href="http://www.cnc-box.ru/Products/%D0%A8%D0%92%D0%9F" style="background-image:url(&quot;/forum/ads/img/швп для станков с чпу.png&quot;);" title="Винты ШВП"></a>	</div></div>
+	
+
+	<h2 class="topic-title"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892">Управление частотником Huanyang по Modbus</a></h2>  
+	<script language="javascript">
+		t=$("h2.topic-title a").html();
+		t=t.replace(/&amp;/g,'&');
+		$("h2.topic-title a").html(t);
+	</script>
+	<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Mach, популярные  и не очень CAD, CAM. Обсуждение и разработка программ для управления станками.<br></div>
+
+	<div class="topic-actions">
+
+		<div class="buttons">
+		
+			<div class="reply-icon"><a href="http://www.cnc-club.ru/forum/posting.php?mode=reply&amp;f=16&amp;t=5892" title="Ответить"><span></span>Ответить</a></div>
+		
+		</div>
+
+		
+			<div class="pagination">
+				Сообщений: 133
+				 • <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jumpto(); return false;" title="Перейти на страницу…">Страница <strong>1</strong> из <strong>7</strong></a> • <span><strong>1</strong><span class="page-sep">, </span><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892&amp;start=20">2</a><span class="page-sep">, </span><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892&amp;start=40">3</a><span class="page-sep">, </span><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892&amp;start=60">4</a><span class="page-sep">, </span><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892&amp;start=80">5</a><span class="page-dots"> ... </span><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892&amp;start=120">7</a></span>
+			
+				<script language="javascript">
+					// Added by custom mod !!!
+					var post_page_number = parseInt("Страница <strong>1</strong> из <strong>7</strong>".match("<strong>\\s*(\\d+)\\s*</strong>")[1]);				
+				</script>
+			</div>
+		
+
+	</div>
+	<div class="clear"></div>
+
+	
+	<script type="text/javascript">
+		topic_url = "./viewtopic.php?f=16&amp;t=5892";
+		topic_url = topic_url.substring(2,topic_url.length);
+		topic_url = topic_url.replace(/\&amp;/g,"&");
+		post_id = [];
+	</script>
+
+	
+		<div id="p142867" class="post u5680 bg2 topic-starter">
+			
+			<div class="postbody">
+				
+							<ul class="profile-icons">
+								
+									<li>
+									<ul class="post-reputation">
+										<li class="rate-good-icon"></li>
+										<li class="reputation positive"><div title="Репутация записи"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.postdetails(&#39;142867&#39;); return false;">14</a></div></li>
+										
+									</ul>
+									</li>
+									<br>
+								
+
+							</ul>
+						
+					<script type="text/javascript">  post_id[0] = "#"+(0 + ((post_page_number-1)*20) + 1); </script>
+					<h3 class="first"> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#p142867">Управление частотником Huanyang по Modbus</a>  
+					<a class="named-href-to-post" onclick="copyToClipboard(&quot;[url=http://cnc-club.ru/forum/&quot;+topic_url+&quot;&amp;p=142867#p142867]&quot;+ $(&quot;#p142867 h3 a&quot;).first().text().replace(/&quot;/g,&quot;&quot;)+&quot; &quot;+post_id[0]+&quot;[/url]&quot;);"></a> 
+					<a class="name-quote" onclick="mozWrap($(&#39;#message-box textarea&#39;).get(0),&#39;[b]Kopyloff[/b], &#39;,&#39;&#39;); if ($(&#39;#qr_editor_div&#39;).css(&#39;display&#39;) != &#39;block&#39;) {dE(&#39;qr_editor_div&#39;);dE(&#39;qr_showeditor_div&#39;);}"></a>
+					  </h3>
+					<p class="author"> <script type="text/javascript">document.write(post_id[0]);</script>#1 <a href="http://www.cnc-club.ru/forum/viewtopic.php?p=142867#p142867"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_post_target.gif" width="11" height="9" alt="Сообщение" title="Сообщение"></a> <strong class="author"><a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=5680">Kopyloff</a></strong> » 04 окт 2014, 17:40 </p>
+
+					
+					<div class="content">Тема подключения ПЧ по модбасу уже много раз обсуждалась, есть куча мануалов и описаний, но я решил всё же выложить результаты моих пыток ПЧ по RS485 (Modbus RTU), чтобы всё лежало в одном месте и не забылось со временем.<br><br>Итак, решил я подключить свой частотник Huanyang HY02D223B (3ф, 220 В, 2.2 кВт) по Modbus RTU к MACH3. Преобразователь интерфейсов USB-RS485 прикупил на алиэкспрессе <a href="http://www.aliexpress.com/snapshot/6207227962.html" class="postlink">http://www.aliexpress.com/snapshot/6207227962.html</a> по 66 рублей за штуку.<br><div class="inline-attachment">
+		<dl class="thumbnail">
+			
+					<dt><a class="colorbox cboxElement" href="http://www.cnc-club.ru/forum/download/file.php?id=34323&amp;mode=view&amp;mt=1"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/DSCN1805.JPG" alt="Управление частотником Huanyang по Modbus DSCN1805.JPG" title="Управление частотником Huanyang по Modbus DSCN1805.JPG (4.7 Мб) Просмотров: 12226"></a></dt>
+				
+		</dl>
+		</div><br><div class="inline-attachment">
+		<dl class="thumbnail">
+			
+					<dt><a class="colorbox cboxElement" href="http://www.cnc-club.ru/forum/download/file.php?id=34324&amp;mode=view&amp;mt=1"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/DSCN1804.JPG" alt="Управление частотником Huanyang по Modbus DSCN1804.JPG" title="Управление частотником Huanyang по Modbus DSCN1804.JPG (4.66 Мб) Просмотров: 12226"></a></dt>
+				
+		</dl>
+		</div><br>Драйверов с ними не было, нашёл по ИД оборудования: USB\VID_1A86&amp;PID_7523&amp;REV_0254<br><div class="inline-attachment">
+		<dl class="file">
+			<dt><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_topic_attach.gif" width="7" height="10" alt="" title=""> <a class="postlink" href="http://www.cnc-club.ru/forum/download/file.php?id=34322">CH341SER.ZIP</a></dt>
+			<dd><em>Дрова к преобразователю интерфейсов USB-RS485</em></dd>
+			<dd>(187.98 Кб) Скачиваний: 2324</dd>
+		</dl>
+		</div><br><br>Выход 'A(D+)' подключаем ко входу 'RS+' частотника, выход 'B(D-)' - ко входу 'RS-' соответственно.<br><div class="inline-attachment">
+		<dl class="thumbnail">
+			
+					<dt><a class="colorbox cboxElement" href="http://www.cnc-club.ru/forum/download/file.php?id=34325&amp;mode=view&amp;mt=1"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/DSCN1807.JPG" alt="Управление частотником Huanyang по Modbus DSCN1807.JPG" title="Управление частотником Huanyang по Modbus DSCN1807.JPG (5.17 Мб) Просмотров: 12226"></a></dt>
+				
+		</dl>
+		</div><br>В описании подключения RS485 говорится что на крайние точки подключения нужно ставить терминальные резисторы по 120 Ом, но у меня провод меньше 0,5 метра, поэтому всё работает и так <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_e_biggrin.gif" alt=":D" title="Very Happy"><br><br>Настраиваем MACH3 по инструкции (плагин тоже в архиве присутствует).<br><div class="inline-attachment">
+		<dl class="file">
+			<dt><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_topic_attach.gif" width="7" height="10" alt="" title=""> <a class="postlink" href="http://www.cnc-club.ru/forum/download/file.php?id=34326">HuanyangVFD_plugin.zip</a></dt>
+			
+			<dd>(625.37 Кб) Скачиваний: 1042</dd>
+		</dl>
+		</div><br><br>Если всё закончилось благополучно - в окне считанных параметров будут стоять актуальные значения. В противном случае - будут числа 99.<br><div class="inline-attachment">
+		<dl class="thumbnail">
+			 			
+					<dt><a class="colorbox cboxElement" href="http://www.cnc-club.ru/forum/download/file.php?id=34327&amp;mode=view"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/1.png" alt="Управление частотником Huanyang по Modbus 1.png" title="Управление частотником Huanyang по Modbus 1.png (141.62 Кб) Просмотров: 12226"></a></dt>
+				
+		</dl>
+		</div><br><br>Далее самое интересное. Т.к. Modbus вообще не был описан в прилагаемой инструкции, а найденный в интернете вариант мануала <div class="inline-attachment">
+		<dl class="file">
+			<dt><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_topic_attach.gif" width="7" height="10" alt="" title=""> <a class="postlink" href="http://www.cnc-club.ru/forum/download/file.php?id=34328">huuang_Inverter_MANUAL.pdf</a></dt>
+			
+			<dd>(428.27 Кб) Скачиваний: 7383</dd>
+		</dl>
+		</div> содержит крайне скудную информацию (как потом оказалось - вообще не соответствует спецификации протокола Modbus) то пришлось для изучения Modbus пойти другим путём - методом "от обратного". Для этого установил сниффер СОМ-порта - LGComSpy++ v1.0<br><div class="inline-attachment">
+		<dl class="thumbnail">
+			 			
+					<dt><a class="colorbox cboxElement" href="http://www.cnc-club.ru/forum/download/file.php?id=34330&amp;mode=view"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/3.png" alt="Управление частотником Huanyang по Modbus 3.png" title="Управление частотником Huanyang по Modbus 3.png (39.32 Кб) Просмотров: 12226"></a></dt>
+				
+		</dl>
+		</div><br><br>и включая/выключая шпиндель и изменяя частоту его вращения из MACH3<br><div class="inline-attachment">
+		<dl class="thumbnail">
+			 			
+					<dt><a class="colorbox cboxElement" href="http://www.cnc-club.ru/forum/download/file.php?id=34332&amp;mode=view"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/2.png" alt="Управление частотником Huanyang по Modbus 2.png" title="Управление частотником Huanyang по Modbus 2.png (319.88 Кб) Просмотров: 12226"></a></dt>
+				
+		</dl>
+		</div><br><br>смотрел что же улетает через СОМ-порт и прилетает обратно с частотника<br><div class="inline-attachment">
+		<dl class="thumbnail">
+			 			
+					<dt><a class="colorbox cboxElement" href="http://www.cnc-club.ru/forum/download/file.php?id=34333&amp;mode=view"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/4.png" alt="Управление частотником Huanyang по Modbus 4.png" title="Управление частотником Huanyang по Modbus 4.png (32.56 Кб) Просмотров: 12226"></a></dt>
+				
+		</dl>
+		</div><br><br>В итоге сопоставив эти данные с мануалом частотника удалось понять структуру посылки пакета Modbus и какими параметрами можно управлять частотником:<br><div>
+<a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#phpbb3bbcodes_spoiler" onclick="
+if (this.parentNode.getElementsByTagName(&#39;div&#39;)[0].style.display != &#39;&#39;) 
+{ 
+	this.parentNode.getElementsByTagName(&#39;div&#39;)[0].style.display = &#39;&#39;;
+	this.style.backgroundImage = &#39;url(/forum/images/custom/icon_minus.gif)&#39;;
+} 
+else
+{ 
+	this.parentNode.getElementsByTagName(&#39;div&#39;)[0].style.display = &#39;none&#39;;
+	this.style.backgroundImage = &#39;url(/forum/images/custom/icon_plus.gif)&#39;;
+} return false;" style="padding-right: 20px; background: transparent url(/forum/images/custom/icon_plus.gif) no-repeat scroll right;"><b></b> (для просмотра содержимого нажмите на ссылку)</a>
+
+<div style="display: none;">
+**********************************<br>*  Чтение параметров ПЧ  *<br>**********************************<br>Read function code data <br>      Format: <br>      ADDR 01 LEN    FUNC Data <br>      ADDR=0 means no answer <br>ADDR не равен 0 means a reply from inverter of this address <br>      When inverter reply normal, the format as follows: <br>      ADDR 01 LEN    FUNC Data <br>If DATA is one word, the LEN=3, If DATA is one byte, the LEN=2 .       <br>When inverter has no this function code or reply no effect, the format as follows: <br>      ADDR 81H 01 FUNC <br><br><br>01 01 02 00 00 B9 FC - Чтение значения параметра PD000<br>01 01 02 00 00 B9 FC - ответ - PD000 = 0<br><br>01 01 02 01 00 B8 6C - Чтение значения параметра PD001<br>01 01 02 01 02 39 AD - ответ - PD001 = 2<br><br>01 01 02 02 00 B8 9C - Чтение значения параметра PD002<br>01 01 02 02 02 39 5D - ответ - PD002 = 2<br><br>01 01 02 03 00 B9 0C - Чтение значения параметра PD003<br>01 01 03 03 01 F4 CC 59 - ответ - 01 F4 [hex] = 500 [dec] -&gt; PD003 = 5,00 Гц<br><br>01 01 02 04 00 BB 3C - Чтение значения параметра PD004<br>01 01 03 04 9C 40 15 7F - ответ - 9C 40 [hex] = 40000 [dec] -&gt; PD004 = 400,00 Гц<br><br>**********************************<br>* Запись параметров ПЧ  *<br>**********************************<br>Write function code data   <br>      Format: <br>      ADDR 02 LEN    FUNC Data <br>              ADDR=0 for broadcast, it write to all inverter, but no reply.   <br>      ADDR не равен 0,    set data and reply from inverter of this address.   <br>When the setting is incorrect or the inverter does not have this function, the format    returned is as <br>follows: <br>      ADDR 81H 01 FUNC <br><br><br>01 02 02 01 01 79 E8 - Запись значения параметра PD001=1<br>01 02 02 01 01 79 E8 - ответ - PD001=1<br><br><br>************************<br>* Управление ПЧ  *<br>************************<br><br>Control commands <br>      Format: <br>      ADDR 03 LEN    CNTR <br>              ADDR=0 for broadcast, it write to all inverter, but no reply <br>      ADDR?0, reply and return.   <br>      CNTR <br>7 	 6  	5  	4  	3  		2  	1  	0 <br>jogr  jogf  jog  	r/f  	stop  	rev  for  run <br>When the setting is correct it will return to present control status. <br>Format:ADDR 03 LEN    CNST <br>CNST <br>7 			6  		5  	4  		3  		2  	1  	0 <br>Track start  	Braking  	r/f  	jogging  	running  	r/f  	jog  	run <br>When the check is not correct, <br>ADDR 83H 01 CNST <br><br><br>01 03 01 01 31 88 - Запуск шпинделя (31 88 - CRC)		- адрес 257<br>	01 03 01 00 F0 48  - ответ<br>01 03 01 08 F1 8E - Останов шпинделя (F1 8E - CRC)	- адрес 264<br>	01 03 01 01 31 88 - ответ<br><br><br>*****************************<br>*  Чтение статуса ПЧ  *<br>*****************************<br>Read status value <br>    Format: <br>    ADDR 04 01 CFG <br>    ADDR=0, no reply <br>    ADDR?0, reply.   <br>    CFG=0~7, reply single data <br>0:Set F      1:Out F      2:Out A        3:RoTT <br>4:DCV      5:ACV       6:Cont         7:Tmp <br>For example: read agreed frequency <br>Send:01    04    03    00    CRC <br>Return:01    04    03    13    88    CRC <br>In which, 13    88 are data <br>13 for high order, while 88 for low order. <br><br><br>01 04 01 00 41 89 - Set F - Заданная частота<br>	01 04 03 00 20 8D 29 EB - ответ = 20 8D [hex] = 8333 [dec] -&gt; 83,33 Гц<br><br>01 04 01 01 80 49 - Out F _ Выходная частота<br>	01 04 03 01 20 8D 78 2B - ответ = 20 8D [hex] = 8333 [dec] -&gt; 83,33 Гц<br><br>01 04 01 02 C0 48 - Out A - Выходной ток<br>	01 04 03 02 00 01 90 4E - ответ = 00 01 [hex] = 0 [dec] -&gt; 0,1 А<br><br>01 04 01 03 01 88 - RoTT - Частота вращения<br>	01 04 03 03 13 87 4D 1C - ответ = 13 87 [hex] = 4999 [dec] -&gt; 4999 об/мин<br><br>01 04 01 04 40 4A - DCV - Напряжение в звене постоянного тока<br>	01 04 03 04 0B E7 F6 F5 - ответ = 0B E7 [hex] = 3047 [dec] -&gt; 307,7 Вольт<br><br>01 04 01 05 81 8A - ACV - Напряжение на выходе<br>	01 04 03 05 02 26 60 F5 - ответ = 02 26 [hex] = 550 [dec] -&gt; 55,0 Вольт<br><br>01 04 01 06 C1 8B - Cont - Counter - Счетчик (видимо - состояние счетчика из параметра PD065)<br>	01 04 03 06 00 00 10 4F - ответ = 00 00 [hex] = 0 [dec] -&gt; 0<br><br>01 04 01 07 00 4B - Tmp - Температура<br>	01 04 03 07 00 00 41 8F - ответ = 00 00 [hex] = 0 [dec] -&gt; 0<br><br>*****************************************<br>*  Запись задания частоты ПЧ  *<br>*****************************************<br><br>В мануале не расписана запись задания частоты ПЧ, поэтому разберём просто на примерах.<br>Здесь структура похожая:<br>АДРЕС_ПЧ=01	№_ФУНКЦИИ=05		ДЛИНА=03 (т.к. записываем слово: WORD=2 BYTE)	ЗАДАНИЕ_ЧАСТОТЫ [hex]		ПУСТОЙ_3-й_БАЙТ=00	CRC<br><br>01 05 03 20 8D 00 A9 14 - Скорость шпинделя 5000 об/мин = 83,33 Гц (A9 14 - CRC)	- 20 8D -&gt; 8333<br>	01 05 02 20 8D 61 69 - ответ<br><br>В принципе, можно указать длину = 02, ничего не изменится, только запись сократится:<br>01 05 02 20 8D 61 69 - Скорость шпинделя 5000 об/мин = 83,33 Гц (A9 14 - CRC)	- 20 8D -&gt; 8333<br>	01 05 02 20 8D 61 69 - ответ<br><br><br>01 05 03 41 1A 00 96 FA - Скорость шпинделя 10000 об/мин = 166.6 Гц (96 FA - CRC)	- 41 1A -&gt; 16666<br>	01 05 02 41 1A 09 57 - ответ<br><br>01 05 03 61 A8 00 E3 90 - Скорость шпинделя 15000 об/мин = 250 Гц (E3 90 - CRC)	- 61 A8 -&gt; 25000<br>	01 05 02 61 A8 90 E2 - ответ
+</div>
+</div><br><br>Далее установил программу Modbus Poll, с помощью которой можно отсылать и принимать пакеты Modbus, и , что немаловажно, она сама считает код CRC:<br><div class="inline-attachment">
+		<dl class="thumbnail">
+			 			
+					<dt><a class="colorbox cboxElement" href="http://www.cnc-club.ru/forum/download/file.php?id=34334&amp;mode=view"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/5.png" alt="Управление частотником Huanyang по Modbus 5.png" title="Управление частотником Huanyang по Modbus 5.png (93.64 Кб) Просмотров: 12226"></a></dt>
+				
+		</dl>
+		</div><br>Софтина триальная и рвёт соединение каждые 10 минут, но для экспериментов этого достаточно.<br><br> В итоге получилось считывать параметры ПЧ; изменять их; управлять включением/выключением шпинделя; задавать частоту; считывать статусную информацию.<br>Сделано это всё было в основном для изучения протокола Modbus, т.к. есть интерес к данной области и возможная халтура  <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_e_biggrin.gif" alt=":D" title="Very Happy"> , ну и для диагностики Modbus это всё мне очень пригодится, "я так думаю" (с)</div>
+
+					
+
+			</div>
+
+			
+				<dl class="postprofile" id="profile5680">
+					<dt>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=5680">Kopyloff</a>
+					</dt>
+
+					<dd>Мастер</dd>
+				<dd>&nbsp;</dd>
+
+				<dd><strong>Сообщения:</strong> 385</dd><dd><strong>Зарегистрирован:</strong> 28 мар 2013, 07:40</dd><dd><strong>Откуда:</strong> Первоуральск</dd>
+					<dd class="user-reputation"><strong>Репутация:</strong> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.userdetails(&#39;5680&#39;, &#39;142867&#39;); return false;"><strong>115</strong></a></dd>
+					
+					<dd><strong>Настоящее имя:</strong> Сергей</dd>
+				
+					<dd>
+						<ul class="profile-icons">
+							<li class="pm-icon"><a href="http://www.cnc-club.ru/forum/ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=142867" title="Личное сообщение"><span>Личное сообщение</span></a></li>
+						</ul>
+					</dd>
+				
+
+				</dl>
+			
+
+			<div class="back2top"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#wrap" class="top" title="Вернуться к началу">Вернуться к началу</a></div>
+
+			
+		</div>
+
+		<hr class="divider">
+	
+		<div id="p142869" class="post u83 bg1">
+			
+			<div class="postbody">
+				
+							<ul class="profile-icons">
+								
+									<li>
+									<ul class="post-reputation">
+										<li class="rate-good-icon"></li>
+										<li class="reputation zero"><div title="Репутация записи"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.postdetails(&#39;142869&#39;); return false;">0</a></div></li>
+										
+									</ul>
+									</li>
+									<br>
+								
+
+							</ul>
+						
+					<script type="text/javascript">  post_id[1] = "#"+(1 + ((post_page_number-1)*20) + 1); </script>
+					<h3> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#p142869">Re: Управление частотником Huanyang по Modbus</a>  
+					<a class="named-href-to-post" onclick="copyToClipboard(&quot;[url=http://cnc-club.ru/forum/&quot;+topic_url+&quot;&amp;p=142869#p142869]&quot;+ $(&quot;#p142869 h3 a&quot;).first().text().replace(/&quot;/g,&quot;&quot;)+&quot; &quot;+post_id[1]+&quot;[/url]&quot;);"></a> 
+					<a class="name-quote" onclick="mozWrap($(&#39;#message-box textarea&#39;).get(0),&#39;[b]aftaev[/b], &#39;,&#39;&#39;); if ($(&#39;#qr_editor_div&#39;).css(&#39;display&#39;) != &#39;block&#39;) {dE(&#39;qr_editor_div&#39;);dE(&#39;qr_showeditor_div&#39;);}"></a>
+					  </h3>
+					<p class="author"> <script type="text/javascript">document.write(post_id[1]);</script>#2 <a href="http://www.cnc-club.ru/forum/viewtopic.php?p=142869#p142869"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_post_target.gif" width="11" height="9" alt="Сообщение" title="Сообщение"></a> <strong class="author"><a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=83" style="color: #009900;" class="username-coloured">aftaev</a></strong> » 04 окт 2014, 17:50 </p>
+
+					
+					<div class="content"><span style="font-weight: bold">Kopyloff</span>, ты наверно забыл выложить настройки Мача под МодБас <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_e_wink.gif" alt=";)" title="Wink"></div>
+
+					<div id="sig142869" class="signature">Дилетанту сложные вещи кажутся очень простыми, и только профессионал понимает насколько сложна самая простая вещь<br>Кто хочет - ищет возможности, кто не хочет - ищет оправдание.<br>Найди работу по душе и тебе не придется работать.</div>
+
+			</div>
+
+			
+				<dl class="postprofile profile_0" id="profile83" style="height: 138px;"><div class="show-profile-div bg2"><a onclick="show_profile(&quot;.profile_0&quot;);"></a></div>
+					<dt>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=83" style="color: #009900;" class="username-coloured">aftaev</a>
+					</dt>
+
+					<dd>Зачётный участник<br><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/cnc-club.ru-premium-member-green.png" alt="Зачётный участник" title="Зачётный участник"></dd>
+				<dd>&nbsp;</dd>
+
+				<dd><strong>Сообщения:</strong> 27839</dd><dd><strong>Зарегистрирован:</strong> 04 апр 2010, 19:22</dd><dd><strong>Откуда:</strong> Казахстан. Шымкент</dd>
+					<dd class="user-reputation"><strong>Репутация:</strong> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.userdetails(&#39;83&#39;, &#39;142869&#39;); return false;"><strong>4608</strong></a></dd>
+					
+					<dd><strong>Медальки:</strong> <a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=3&amp;t=1013#p5718" title="За создание станка"></a>
+<a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=3&amp;t=1013#p5734" title="За создание станка"></a>
+<a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=3&amp;t=1013#p5736" title="За модернизацию станка"></a>
+<a class="medal gold" href="http://www.cnc-club.ru/forum/viewtopic.php?f=3&amp;t=1013&amp;p=28013#p28002" title="За создание уникального 1 осевого станка :)"></a>
+<a class="medal silver" href="http://cnc-club.ru/forum/viewtopic.php?f=34&amp;t=1950&amp;start=100#p29897" title="За создание доски для серфинга с ЧПУ"></a> <a class="medal silver" href="http://cnc-club.ru/forum/viewtopic.php?f=28&amp;t=2420&amp;p=50231#p50231" title="За статью о выставлении перпендикулярности шпинделя!"></a>
+<a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=3&amp;t=3012&amp;p=65767#p65767" title="За восстановление и модернизацию 6Т80Ш"></a>
+<a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=42&amp;t=2663&amp;p=56176#p56176" title="За статью по ремонту китайских шпинделей"></a>
+<a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=41&amp;t=2289&amp;start=140&amp;p=66825#p66825" title="За простой осциллограф на ардуино"></a> <a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=3&amp;t=1013&amp;start=220&amp;p=80090#p80090" title="За труборез с ЧПУ!"></a>
+<a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=3&amp;t=3474&amp;start=580&amp;p=85482#p85482" title="За приспособу для шлифовки направляющих токарного станка"></a></dd>
+				
+					<dd>
+						<ul class="profile-icons">
+							<li class="pm-icon"><a href="http://www.cnc-club.ru/forum/ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=142869" title="Личное сообщение"><span>Личное сообщение</span></a></li>
+						</ul>
+					</dd>
+				
+
+				</dl>
+			
+
+			<div class="back2top"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#wrap" class="top" title="Вернуться к началу">Вернуться к началу</a></div>
+
+			
+		</div>
+
+		<hr class="divider">
+	
+		<div id="p142870" class="post u5680 bg2 topic-starter">
+			
+			<div class="postbody">
+				
+							<ul class="profile-icons">
+								
+									<li>
+									<ul class="post-reputation">
+										<li class="rate-good-icon"></li>
+										<li class="reputation zero"><div title="Репутация записи"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.postdetails(&#39;142870&#39;); return false;">0</a></div></li>
+										
+									</ul>
+									</li>
+									<br>
+								
+
+							</ul>
+						
+					<script type="text/javascript">  post_id[2] = "#"+(2 + ((post_page_number-1)*20) + 1); </script>
+					<h3> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#p142870">Re: Управление частотником Huanyang по Modbus</a>  
+					<a class="named-href-to-post" onclick="copyToClipboard(&quot;[url=http://cnc-club.ru/forum/&quot;+topic_url+&quot;&amp;p=142870#p142870]&quot;+ $(&quot;#p142870 h3 a&quot;).first().text().replace(/&quot;/g,&quot;&quot;)+&quot; &quot;+post_id[2]+&quot;[/url]&quot;);"></a> 
+					<a class="name-quote" onclick="mozWrap($(&#39;#message-box textarea&#39;).get(0),&#39;[b]Kopyloff[/b], &#39;,&#39;&#39;); if ($(&#39;#qr_editor_div&#39;).css(&#39;display&#39;) != &#39;block&#39;) {dE(&#39;qr_editor_div&#39;);dE(&#39;qr_showeditor_div&#39;);}"></a>
+					  </h3>
+					<p class="author"> <script type="text/javascript">document.write(post_id[2]);</script>#3 <a href="http://www.cnc-club.ru/forum/viewtopic.php?p=142870#p142870"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_post_target.gif" width="11" height="9" alt="Сообщение" title="Сообщение"></a> <strong class="author"><a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=5680">Kopyloff</a></strong> » 04 окт 2014, 17:57 </p>
+
+					
+					<div class="content">Все настройки MACH указаны в мануале (лежит в архиве HuanyangVFD_plugin.zip). Единственное различие - у меня номер COM-порта был COM1, а в мануале - COM5. Настройки ПЧ - такие же как в этом мануале.</div>
+
+					
+
+			</div>
+
+			
+				<dl class="postprofile profile_1" id="profile5680" style="height: 74px;"><div class="show-profile-div "><a onclick="show_profile(&quot;.profile_1&quot;);"></a></div>
+					<dt>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=5680">Kopyloff</a>
+					</dt>
+
+					<dd>Мастер</dd>
+				<dd>&nbsp;</dd>
+
+				<dd><strong>Сообщения:</strong> 385</dd><dd><strong>Зарегистрирован:</strong> 28 мар 2013, 07:40</dd><dd><strong>Откуда:</strong> Первоуральск</dd>
+					<dd class="user-reputation"><strong>Репутация:</strong> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.userdetails(&#39;5680&#39;, &#39;142870&#39;); return false;"><strong>115</strong></a></dd>
+					
+					<dd><strong>Настоящее имя:</strong> Сергей</dd>
+				
+					<dd>
+						<ul class="profile-icons">
+							<li class="pm-icon"><a href="http://www.cnc-club.ru/forum/ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=142870" title="Личное сообщение"><span>Личное сообщение</span></a></li>
+						</ul>
+					</dd>
+				
+
+				</dl>
+			
+
+			<div class="back2top"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#wrap" class="top" title="Вернуться к началу">Вернуться к началу</a></div>
+
+			
+		</div>
+
+		<hr class="divider">
+	
+		<div id="p142873" class="post u3531 bg1">
+			
+			<div class="postbody">
+				
+							<ul class="profile-icons">
+								
+									<li>
+									<ul class="post-reputation">
+										<li class="rate-good-icon"></li>
+										<li class="reputation positive"><div title="Репутация записи"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.postdetails(&#39;142873&#39;); return false;">1</a></div></li>
+										
+									</ul>
+									</li>
+									<br>
+								
+
+							</ul>
+						
+					<script type="text/javascript">  post_id[3] = "#"+(3 + ((post_page_number-1)*20) + 1); </script>
+					<h3> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#p142873">Re: Управление частотником Huanyang по Modbus</a>  
+					<a class="named-href-to-post" onclick="copyToClipboard(&quot;[url=http://cnc-club.ru/forum/&quot;+topic_url+&quot;&amp;p=142873#p142873]&quot;+ $(&quot;#p142873 h3 a&quot;).first().text().replace(/&quot;/g,&quot;&quot;)+&quot; &quot;+post_id[3]+&quot;[/url]&quot;);"></a> 
+					<a class="name-quote" onclick="mozWrap($(&#39;#message-box textarea&#39;).get(0),&#39;[b]NightV[/b], &#39;,&#39;&#39;); if ($(&#39;#qr_editor_div&#39;).css(&#39;display&#39;) != &#39;block&#39;) {dE(&#39;qr_editor_div&#39;);dE(&#39;qr_showeditor_div&#39;);}"></a>
+					  </h3>
+					<p class="author"> <script type="text/javascript">document.write(post_id[3]);</script>#4 <a href="http://www.cnc-club.ru/forum/viewtopic.php?p=142873#p142873"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_post_target.gif" width="11" height="9" alt="Сообщение" title="Сообщение"></a> <strong class="author"><a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3531" style="color: #0066CC;" class="username-coloured">NightV</a></strong> » 04 окт 2014, 18:17 </p>
+
+					
+					<div class="content">хорошая статья, <a href="http://cnc-club.ru/wiki/index.php/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0#.D0.AD.D0.BB.D0.B5.D0.BA.D1.82.D1.80.D0.BE.D0.BD.D0.B8.D0.BA.D0.B0" class="postlink">закинул сылку в WiKi</a> <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/good.gif" alt=":good:" title="Good"></div>
+
+					<div id="sig142873" class="signature">Всё просто! если знаешь <span style="font-weight: bold">КАК</span>!</div>
+
+			</div>
+
+			
+				<dl class="postprofile profile_2" id="profile3531" style="height: 115px;"><div class="show-profile-div bg2"><a onclick="show_profile(&quot;.profile_2&quot;);"></a></div>
+					<dt>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3531"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/3531.jpg" width="80" height="80" alt="Аватара пользователя"></a><br>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3531" style="color: #0066CC;" class="username-coloured">NightV</a>
+					</dt>
+
+					<dd>Почётный участник<br><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/cnc-club.ru-premium-member.png" alt="Почётный участник" title="Почётный участник"></dd>
+				<dd>&nbsp;</dd>
+
+				<dd><strong>Сообщения:</strong> 6336</dd><dd><strong>Зарегистрирован:</strong> 30 дек 2011, 09:14</dd><dd><strong>Откуда:</strong> Israel</dd>
+					<dd class="user-reputation"><strong>Репутация:</strong> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.userdetails(&#39;3531&#39;, &#39;142873&#39;); return false;"><strong>2290</strong></a></dd>
+					
+					<dd><strong>Медальки:</strong> <a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=3&amp;t=1597&amp;#p16493" title="За модернизацию станка"></a>
+<a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=3&amp;t=1494&amp;start=240&amp;p=24433#p24433" title="За реанимацию 4-х осевого гравера по стеклу с ЧПУ"></a></dd>
+				
+					<dd><strong>Настоящее имя:</strong> Владимир Айрапетян</dd>
+				
+					<dd>
+						<ul class="profile-icons">
+							<li class="pm-icon"><a href="http://www.cnc-club.ru/forum/ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=142873" title="Личное сообщение"><span>Личное сообщение</span></a></li><li class="web-icon"><a href="http://www.ebay.co.uk/sch/ayrapetyan/m.html" title="WWW: http://www.ebay.co.uk/sch/ayrapetyan/m.html"><span>Сайт</span></a></li><li class="icq-icon"><a href="http://www.icq.com/people/443411/" onclick="popup(this.href, 550, 320); return false;" title="ICQ"><span>ICQ</span></a></li>
+						</ul>
+					</dd>
+				
+
+				</dl>
+			
+
+			<div class="back2top"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#wrap" class="top" title="Вернуться к началу">Вернуться к началу</a></div>
+
+			
+		</div>
+
+		<hr class="divider">
+	
+		<div id="p142874" class="post u5680 bg2 topic-starter">
+			
+			<div class="postbody">
+				
+							<ul class="profile-icons">
+								
+									<li>
+									<ul class="post-reputation">
+										<li class="rate-good-icon"></li>
+										<li class="reputation zero"><div title="Репутация записи"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.postdetails(&#39;142874&#39;); return false;">0</a></div></li>
+										
+									</ul>
+									</li>
+									<br>
+								
+
+							</ul>
+						
+					<script type="text/javascript">  post_id[4] = "#"+(4 + ((post_page_number-1)*20) + 1); </script>
+					<h3> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#p142874">Re: Управление частотником Huanyang по Modbus</a>  
+					<a class="named-href-to-post" onclick="copyToClipboard(&quot;[url=http://cnc-club.ru/forum/&quot;+topic_url+&quot;&amp;p=142874#p142874]&quot;+ $(&quot;#p142874 h3 a&quot;).first().text().replace(/&quot;/g,&quot;&quot;)+&quot; &quot;+post_id[4]+&quot;[/url]&quot;);"></a> 
+					<a class="name-quote" onclick="mozWrap($(&#39;#message-box textarea&#39;).get(0),&#39;[b]Kopyloff[/b], &#39;,&#39;&#39;); if ($(&#39;#qr_editor_div&#39;).css(&#39;display&#39;) != &#39;block&#39;) {dE(&#39;qr_editor_div&#39;);dE(&#39;qr_showeditor_div&#39;);}"></a>
+					  </h3>
+					<p class="author"> <script type="text/javascript">document.write(post_id[4]);</script>#5 <a href="http://www.cnc-club.ru/forum/viewtopic.php?p=142874#p142874"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_post_target.gif" width="11" height="9" alt="Сообщение" title="Сообщение"></a> <strong class="author"><a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=5680">Kopyloff</a></strong> » 04 окт 2014, 18:23 </p>
+
+					
+					<div class="content">Вот так я узнал что есть ещё и Wiki на сайте оказывается <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_e_biggrin.gif" alt=":D" title="Very Happy"> Спасибо за такую оценку. Если будут вопросы - спрашивайте, пока в голове свежо и ничего не забыл.</div>
+
+					
+
+			</div>
+
+			
+				<dl class="postprofile profile_3" id="profile5680" style="height: 74px;"><div class="show-profile-div "><a onclick="show_profile(&quot;.profile_3&quot;);"></a></div>
+					<dt>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=5680">Kopyloff</a>
+					</dt>
+
+					<dd>Мастер</dd>
+				<dd>&nbsp;</dd>
+
+				<dd><strong>Сообщения:</strong> 385</dd><dd><strong>Зарегистрирован:</strong> 28 мар 2013, 07:40</dd><dd><strong>Откуда:</strong> Первоуральск</dd>
+					<dd class="user-reputation"><strong>Репутация:</strong> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.userdetails(&#39;5680&#39;, &#39;142874&#39;); return false;"><strong>115</strong></a></dd>
+					
+					<dd><strong>Настоящее имя:</strong> Сергей</dd>
+				
+					<dd>
+						<ul class="profile-icons">
+							<li class="pm-icon"><a href="http://www.cnc-club.ru/forum/ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=142874" title="Личное сообщение"><span>Личное сообщение</span></a></li>
+						</ul>
+					</dd>
+				
+
+				</dl>
+			
+
+			<div class="back2top"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#wrap" class="top" title="Вернуться к началу">Вернуться к началу</a></div>
+
+			
+		</div>
+
+		<hr class="divider">
+	
+		<div id="p142890" class="post u3531 bg1">
+			
+			<div class="postbody">
+				
+							<ul class="profile-icons">
+								
+									<li>
+									<ul class="post-reputation">
+										<li class="rate-good-icon"></li>
+										<li class="reputation zero"><div title="Репутация записи"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.postdetails(&#39;142890&#39;); return false;">0</a></div></li>
+										
+									</ul>
+									</li>
+									<br>
+								
+
+							</ul>
+						
+					<script type="text/javascript">  post_id[5] = "#"+(5 + ((post_page_number-1)*20) + 1); </script>
+					<h3> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#p142890">Re: Управление частотником Huanyang по Modbus</a>  
+					<a class="named-href-to-post" onclick="copyToClipboard(&quot;[url=http://cnc-club.ru/forum/&quot;+topic_url+&quot;&amp;p=142890#p142890]&quot;+ $(&quot;#p142890 h3 a&quot;).first().text().replace(/&quot;/g,&quot;&quot;)+&quot; &quot;+post_id[5]+&quot;[/url]&quot;);"></a> 
+					<a class="name-quote" onclick="mozWrap($(&#39;#message-box textarea&#39;).get(0),&#39;[b]NightV[/b], &#39;,&#39;&#39;); if ($(&#39;#qr_editor_div&#39;).css(&#39;display&#39;) != &#39;block&#39;) {dE(&#39;qr_editor_div&#39;);dE(&#39;qr_showeditor_div&#39;);}"></a>
+					  </h3>
+					<p class="author"> <script type="text/javascript">document.write(post_id[5]);</script>#6 <a href="http://www.cnc-club.ru/forum/viewtopic.php?p=142890#p142890"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_post_target.gif" width="11" height="9" alt="Сообщение" title="Сообщение"></a> <strong class="author"><a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3531" style="color: #0066CC;" class="username-coloured">NightV</a></strong> » 04 окт 2014, 19:25 </p>
+
+					
+					<div class="content">это тебе спасибо, что не поленился и поделился опытом!  <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_e_smile.gif" alt=":)" title="Smile"> <br>молодца! <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_beer_blow.gif" alt=":beer_blow:" title="Пиво">  <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/good.gif" alt=":good:" title="Good"></div>
+
+					<div id="sig142890" class="signature">Всё просто! если знаешь <span style="font-weight: bold">КАК</span>!</div>
+
+			</div>
+
+			
+				<dl class="postprofile profile_4" id="profile3531" style="height: 116px;"><div class="show-profile-div bg2"><a onclick="show_profile(&quot;.profile_4&quot;);"></a></div>
+					<dt>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3531"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/3531.jpg" width="80" height="80" alt="Аватара пользователя"></a><br>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3531" style="color: #0066CC;" class="username-coloured">NightV</a>
+					</dt>
+
+					<dd>Почётный участник<br><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/cnc-club.ru-premium-member.png" alt="Почётный участник" title="Почётный участник"></dd>
+				<dd>&nbsp;</dd>
+
+				<dd><strong>Сообщения:</strong> 6336</dd><dd><strong>Зарегистрирован:</strong> 30 дек 2011, 09:14</dd><dd><strong>Откуда:</strong> Israel</dd>
+					<dd class="user-reputation"><strong>Репутация:</strong> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.userdetails(&#39;3531&#39;, &#39;142890&#39;); return false;"><strong>2290</strong></a></dd>
+					
+					<dd><strong>Медальки:</strong> <a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=3&amp;t=1597&amp;#p16493" title="За модернизацию станка"></a>
+<a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=3&amp;t=1494&amp;start=240&amp;p=24433#p24433" title="За реанимацию 4-х осевого гравера по стеклу с ЧПУ"></a></dd>
+				
+					<dd><strong>Настоящее имя:</strong> Владимир Айрапетян</dd>
+				
+					<dd>
+						<ul class="profile-icons">
+							<li class="pm-icon"><a href="http://www.cnc-club.ru/forum/ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=142890" title="Личное сообщение"><span>Личное сообщение</span></a></li><li class="web-icon"><a href="http://www.ebay.co.uk/sch/ayrapetyan/m.html" title="WWW: http://www.ebay.co.uk/sch/ayrapetyan/m.html"><span>Сайт</span></a></li><li class="icq-icon"><a href="http://www.icq.com/people/443411/" onclick="popup(this.href, 550, 320); return false;" title="ICQ"><span>ICQ</span></a></li>
+						</ul>
+					</dd>
+				
+
+				</dl>
+			
+
+			<div class="back2top"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#wrap" class="top" title="Вернуться к началу">Вернуться к началу</a></div>
+
+			
+		</div>
+
+		<hr class="divider">
+	
+		<div id="p142899" class="post u3828 bg2">
+			
+			<div class="postbody">
+				
+							<ul class="profile-icons">
+								
+									<li>
+									<ul class="post-reputation">
+										<li class="rate-good-icon"></li>
+										<li class="reputation zero"><div title="Репутация записи"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.postdetails(&#39;142899&#39;); return false;">0</a></div></li>
+										
+									</ul>
+									</li>
+									<br>
+								
+
+							</ul>
+						
+					<script type="text/javascript">  post_id[6] = "#"+(6 + ((post_page_number-1)*20) + 1); </script>
+					<h3> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#p142899">Re: Управление частотником Huanyang по Modbus</a>  
+					<a class="named-href-to-post" onclick="copyToClipboard(&quot;[url=http://cnc-club.ru/forum/&quot;+topic_url+&quot;&amp;p=142899#p142899]&quot;+ $(&quot;#p142899 h3 a&quot;).first().text().replace(/&quot;/g,&quot;&quot;)+&quot; &quot;+post_id[6]+&quot;[/url]&quot;);"></a> 
+					<a class="name-quote" onclick="mozWrap($(&#39;#message-box textarea&#39;).get(0),&#39;[b]UAVpilot[/b], &#39;,&#39;&#39;); if ($(&#39;#qr_editor_div&#39;).css(&#39;display&#39;) != &#39;block&#39;) {dE(&#39;qr_editor_div&#39;);dE(&#39;qr_showeditor_div&#39;);}"></a>
+					  </h3>
+					<p class="author"> <script type="text/javascript">document.write(post_id[6]);</script>#7 <a href="http://www.cnc-club.ru/forum/viewtopic.php?p=142899#p142899"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_post_target.gif" width="11" height="9" alt="Сообщение" title="Сообщение"></a> <strong class="author"><a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3828">UAVpilot</a></strong> » 04 окт 2014, 19:49 </p>
+
+					
+					<div class="content"><blockquote><div><cite>Kopyloff писал(а):</cite>содержит крайне скудную информацию (как потом оказалось - вообще не соответствует спецификации протокола Modbus) то пришлось для изучения Modbus пойти другим путём - методом "от обратного".</div></blockquote><br>"Всё уже украдено до вас!" (c)<br><a href="http://cnc-club.ru/forum/viewtopic.php?f=15&amp;t=23&amp;start=60&amp;hilit=vfdctl&amp;p=26995#p26995" class="postlink">Re: Полезные программы #61</a><br><br>P.S. А мне показалось что в этой доке вполне достаточно информации... <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_e_smile.gif" alt=":)" title="Smile"></div>
+
+					<div id="sig142899" class="signature"><span style="font-size: 100%; line-height: 116%;"><span style="color: #4040BF">1. Робот не может ответить отказом на предложение человека выпить или своим бездействием допустить, чтобы человек напился один.</span></span></div>
+
+			</div>
+
+			
+				<dl class="postprofile profile_5" id="profile3828" style="height: 235px;"><div class="show-profile-div "><a onclick="show_profile(&quot;.profile_5&quot;);"></a></div>
+					<dt>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3828"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/3828.jpg" width="79" height="90" alt="Аватара пользователя"></a><br>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3828">UAVpilot</a>
+					</dt>
+
+					<dd>Мастер</dd>
+				<dd>&nbsp;</dd>
+
+				<dd><strong>Сообщения:</strong> 15928</dd><dd><strong>Зарегистрирован:</strong> 17 апр 2012, 14:58</dd><dd><strong>Откуда:</strong> Москва</dd>
+					<dd class="user-reputation"><strong>Репутация:</strong> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.userdetails(&#39;3828&#39;, &#39;142899&#39;); return false;"><strong>3879</strong></a></dd>
+					
+					<dd><strong>Медальки:</strong> <a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=40&amp;t=1930&amp;p=33092#p33092" title="За модернизацию линейных подшипников"></a>
+<a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=3&amp;t=3369&amp;start=40&amp;p=112771#p112771" title="За пересадку мозга AG-400"></a></dd>
+				
+					<dd><strong>Настоящее имя:</strong> Сергей</dd>
+				
+					<dd>
+						<ul class="profile-icons">
+							<li class="pm-icon"><a href="http://www.cnc-club.ru/forum/ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=142899" title="Личное сообщение"><span>Личное сообщение</span></a></li>
+						</ul>
+					</dd>
+				
+
+				</dl>
+			
+
+			<div class="back2top"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#wrap" class="top" title="Вернуться к началу">Вернуться к началу</a></div>
+
+			
+		</div>
+
+		<hr class="divider">
+	
+		<div id="p142912" class="post u5680 bg1 topic-starter">
+			
+			<div class="postbody">
+				
+							<ul class="profile-icons">
+								
+									<li>
+									<ul class="post-reputation">
+										<li class="rate-good-icon"></li>
+										<li class="reputation zero"><div title="Репутация записи"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.postdetails(&#39;142912&#39;); return false;">0</a></div></li>
+										
+									</ul>
+									</li>
+									<br>
+								
+
+							</ul>
+						
+					<script type="text/javascript">  post_id[7] = "#"+(7 + ((post_page_number-1)*20) + 1); </script>
+					<h3> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#p142912">Re: Управление частотником Huanyang по Modbus</a>  
+					<a class="named-href-to-post" onclick="copyToClipboard(&quot;[url=http://cnc-club.ru/forum/&quot;+topic_url+&quot;&amp;p=142912#p142912]&quot;+ $(&quot;#p142912 h3 a&quot;).first().text().replace(/&quot;/g,&quot;&quot;)+&quot; &quot;+post_id[7]+&quot;[/url]&quot;);"></a> 
+					<a class="name-quote" onclick="mozWrap($(&#39;#message-box textarea&#39;).get(0),&#39;[b]Kopyloff[/b], &#39;,&#39;&#39;); if ($(&#39;#qr_editor_div&#39;).css(&#39;display&#39;) != &#39;block&#39;) {dE(&#39;qr_editor_div&#39;);dE(&#39;qr_showeditor_div&#39;);}"></a>
+					  </h3>
+					<p class="author"> <script type="text/javascript">document.write(post_id[7]);</script>#8 <a href="http://www.cnc-club.ru/forum/viewtopic.php?p=142912#p142912"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_post_target.gif" width="11" height="9" alt="Сообщение" title="Сообщение"></a> <strong class="author"><a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=5680">Kopyloff</a></strong> » 04 окт 2014, 20:17 </p>
+
+					
+					<div class="content">У меня под виндой баша нет чтобы эти скрипты запускать <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_e_biggrin.gif" alt=":D" title="Very Happy"></div>
+
+					
+
+			</div>
+
+			
+				<dl class="postprofile profile_6" id="profile5680" style="height: 74px;"><div class="show-profile-div bg2"><a onclick="show_profile(&quot;.profile_6&quot;);"></a></div>
+					<dt>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=5680">Kopyloff</a>
+					</dt>
+
+					<dd>Мастер</dd>
+				<dd>&nbsp;</dd>
+
+				<dd><strong>Сообщения:</strong> 385</dd><dd><strong>Зарегистрирован:</strong> 28 мар 2013, 07:40</dd><dd><strong>Откуда:</strong> Первоуральск</dd>
+					<dd class="user-reputation"><strong>Репутация:</strong> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.userdetails(&#39;5680&#39;, &#39;142912&#39;); return false;"><strong>115</strong></a></dd>
+					
+					<dd><strong>Настоящее имя:</strong> Сергей</dd>
+				
+					<dd>
+						<ul class="profile-icons">
+							<li class="pm-icon"><a href="http://www.cnc-club.ru/forum/ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=142912" title="Личное сообщение"><span>Личное сообщение</span></a></li>
+						</ul>
+					</dd>
+				
+
+				</dl>
+			
+
+			<div class="back2top"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#wrap" class="top" title="Вернуться к началу">Вернуться к началу</a></div>
+
+			
+		</div>
+
+		<hr class="divider">
+	
+		<div id="p142969" class="post u3828 bg2">
+			
+			<div class="postbody">
+				
+							<ul class="profile-icons">
+								
+									<li>
+									<ul class="post-reputation">
+										<li class="rate-good-icon"></li>
+										<li class="reputation zero"><div title="Репутация записи"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.postdetails(&#39;142969&#39;); return false;">0</a></div></li>
+										
+									</ul>
+									</li>
+									<br>
+								
+
+							</ul>
+						
+					<script type="text/javascript">  post_id[8] = "#"+(8 + ((post_page_number-1)*20) + 1); </script>
+					<h3> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#p142969">Re: Управление частотником Huanyang по Modbus</a>  
+					<a class="named-href-to-post" onclick="copyToClipboard(&quot;[url=http://cnc-club.ru/forum/&quot;+topic_url+&quot;&amp;p=142969#p142969]&quot;+ $(&quot;#p142969 h3 a&quot;).first().text().replace(/&quot;/g,&quot;&quot;)+&quot; &quot;+post_id[8]+&quot;[/url]&quot;);"></a> 
+					<a class="name-quote" onclick="mozWrap($(&#39;#message-box textarea&#39;).get(0),&#39;[b]UAVpilot[/b], &#39;,&#39;&#39;); if ($(&#39;#qr_editor_div&#39;).css(&#39;display&#39;) != &#39;block&#39;) {dE(&#39;qr_editor_div&#39;);dE(&#39;qr_showeditor_div&#39;);}"></a>
+					  </h3>
+					<p class="author"> <script type="text/javascript">document.write(post_id[8]);</script>#9 <a href="http://www.cnc-club.ru/forum/viewtopic.php?p=142969#p142969"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_post_target.gif" width="11" height="9" alt="Сообщение" title="Сообщение"></a> <strong class="author"><a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3828">UAVpilot</a></strong> » 05 окт 2014, 00:52 </p>
+
+					
+					<div class="content"><blockquote><div><cite>Kopyloff писал(а):</cite>У меня под виндой баша нет чтобы эти скрипты запускать <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_e_biggrin.gif" alt=":D" title="Very Happy"></div></blockquote><br>А где там сказано, что нужен баш под виндой?  <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/hehe.gif" alt=":hehehe:" title="Хе-хе-хе"></div>
+
+					<div id="sig142969" class="signature"><span style="font-size: 100%; line-height: 116%;"><span style="color: #4040BF">1. Робот не может ответить отказом на предложение человека выпить или своим бездействием допустить, чтобы человек напился один.</span></span></div>
+
+			</div>
+
+			
+				<dl class="postprofile profile_7" id="profile3828" style="height: 168px;"><div class="show-profile-div "><a onclick="show_profile(&quot;.profile_7&quot;);"></a></div>
+					<dt>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3828"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/3828.jpg" width="79" height="90" alt="Аватара пользователя"></a><br>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3828">UAVpilot</a>
+					</dt>
+
+					<dd>Мастер</dd>
+				<dd>&nbsp;</dd>
+
+				<dd><strong>Сообщения:</strong> 15928</dd><dd><strong>Зарегистрирован:</strong> 17 апр 2012, 14:58</dd><dd><strong>Откуда:</strong> Москва</dd>
+					<dd class="user-reputation"><strong>Репутация:</strong> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.userdetails(&#39;3828&#39;, &#39;142969&#39;); return false;"><strong>3879</strong></a></dd>
+					
+					<dd><strong>Медальки:</strong> <a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=40&amp;t=1930&amp;p=33092#p33092" title="За модернизацию линейных подшипников"></a>
+<a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=3&amp;t=3369&amp;start=40&amp;p=112771#p112771" title="За пересадку мозга AG-400"></a></dd>
+				
+					<dd><strong>Настоящее имя:</strong> Сергей</dd>
+				
+					<dd>
+						<ul class="profile-icons">
+							<li class="pm-icon"><a href="http://www.cnc-club.ru/forum/ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=142969" title="Личное сообщение"><span>Личное сообщение</span></a></li>
+						</ul>
+					</dd>
+				
+
+				</dl>
+			
+
+			<div class="back2top"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#wrap" class="top" title="Вернуться к началу">Вернуться к началу</a></div>
+
+			
+		</div>
+
+		<hr class="divider">
+	
+		<div id="p142988" class="post u5680 bg1 topic-starter">
+			
+			<div class="postbody">
+				
+							<ul class="profile-icons">
+								
+									<li>
+									<ul class="post-reputation">
+										<li class="rate-good-icon"></li>
+										<li class="reputation zero"><div title="Репутация записи"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.postdetails(&#39;142988&#39;); return false;">0</a></div></li>
+										
+									</ul>
+									</li>
+									<br>
+								
+
+							</ul>
+						
+					<script type="text/javascript">  post_id[9] = "#"+(9 + ((post_page_number-1)*20) + 1); </script>
+					<h3> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#p142988">Re: Управление частотником Huanyang по Modbus</a>  
+					<a class="named-href-to-post" onclick="copyToClipboard(&quot;[url=http://cnc-club.ru/forum/&quot;+topic_url+&quot;&amp;p=142988#p142988]&quot;+ $(&quot;#p142988 h3 a&quot;).first().text().replace(/&quot;/g,&quot;&quot;)+&quot; &quot;+post_id[9]+&quot;[/url]&quot;);"></a> 
+					<a class="name-quote" onclick="mozWrap($(&#39;#message-box textarea&#39;).get(0),&#39;[b]Kopyloff[/b], &#39;,&#39;&#39;); if ($(&#39;#qr_editor_div&#39;).css(&#39;display&#39;) != &#39;block&#39;) {dE(&#39;qr_editor_div&#39;);dE(&#39;qr_showeditor_div&#39;);}"></a>
+					  </h3>
+					<p class="author"> <script type="text/javascript">document.write(post_id[9]);</script>#10 <a href="http://www.cnc-club.ru/forum/viewtopic.php?p=142988#p142988"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_post_target.gif" width="11" height="9" alt="Сообщение" title="Сообщение"></a> <strong class="author"><a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=5680">Kopyloff</a></strong> » 05 окт 2014, 08:15 </p>
+
+					
+					<div class="content">А как ещё эти проги запускать? У меня по ссылкам скрипты открываются:<br><div class="inline-attachment">
+		<dl class="thumbnail">
+			 			
+					<dt><a class="colorbox cboxElement" href="http://www.cnc-club.ru/forum/download/file.php?id=34365&amp;mode=view"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/6.png" alt="Управление частотником Huanyang по Modbus 6.png" title="Управление частотником Huanyang по Modbus 6.png (15.47 Кб) Просмотров: 12156"></a></dt>
+				
+		</dl>
+		</div><br><br>Может есть какое-то кроссплатформенное приложение? А то порой проще новое приложение написать, чем чьи-то исходники раскурить.</div>
+
+					
+
+			</div>
+
+			
+				<dl class="postprofile" id="profile5680">
+					<dt>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=5680">Kopyloff</a>
+					</dt>
+
+					<dd>Мастер</dd>
+				<dd>&nbsp;</dd>
+
+				<dd><strong>Сообщения:</strong> 385</dd><dd><strong>Зарегистрирован:</strong> 28 мар 2013, 07:40</dd><dd><strong>Откуда:</strong> Первоуральск</dd>
+					<dd class="user-reputation"><strong>Репутация:</strong> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.userdetails(&#39;5680&#39;, &#39;142988&#39;); return false;"><strong>115</strong></a></dd>
+					
+					<dd><strong>Настоящее имя:</strong> Сергей</dd>
+				
+					<dd>
+						<ul class="profile-icons">
+							<li class="pm-icon"><a href="http://www.cnc-club.ru/forum/ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=142988" title="Личное сообщение"><span>Личное сообщение</span></a></li>
+						</ul>
+					</dd>
+				
+
+				</dl>
+			
+
+			<div class="back2top"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#wrap" class="top" title="Вернуться к началу">Вернуться к началу</a></div>
+
+			
+		</div>
+
+		<hr class="divider">
+	
+		<div id="p142990" class="post u3828 bg2">
+			
+			<div class="postbody">
+				
+							<ul class="profile-icons">
+								
+									<li>
+									<ul class="post-reputation">
+										<li class="rate-good-icon"></li>
+										<li class="reputation zero"><div title="Репутация записи"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.postdetails(&#39;142990&#39;); return false;">0</a></div></li>
+										
+									</ul>
+									</li>
+									<br>
+								
+
+							</ul>
+						
+					<script type="text/javascript">  post_id[10] = "#"+(10 + ((post_page_number-1)*20) + 1); </script>
+					<h3> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#p142990">Re: Управление частотником Huanyang по Modbus</a>  
+					<a class="named-href-to-post" onclick="copyToClipboard(&quot;[url=http://cnc-club.ru/forum/&quot;+topic_url+&quot;&amp;p=142990#p142990]&quot;+ $(&quot;#p142990 h3 a&quot;).first().text().replace(/&quot;/g,&quot;&quot;)+&quot; &quot;+post_id[10]+&quot;[/url]&quot;);"></a> 
+					<a class="name-quote" onclick="mozWrap($(&#39;#message-box textarea&#39;).get(0),&#39;[b]UAVpilot[/b], &#39;,&#39;&#39;); if ($(&#39;#qr_editor_div&#39;).css(&#39;display&#39;) != &#39;block&#39;) {dE(&#39;qr_editor_div&#39;);dE(&#39;qr_showeditor_div&#39;);}"></a>
+					  </h3>
+					<p class="author"> <script type="text/javascript">document.write(post_id[10]);</script>#11 <a href="http://www.cnc-club.ru/forum/viewtopic.php?p=142990#p142990"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_post_target.gif" width="11" height="9" alt="Сообщение" title="Сообщение"></a> <strong class="author"><a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3828">UAVpilot</a></strong> » 05 окт 2014, 08:30 </p>
+
+					
+					<div class="content">Написано-же:<br><blockquote><div><cite>UAVpilot писал(а):</cite>Для работы ей нужно установренные tcl/tk и bwidget</div></blockquote><br> <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/i-dont-know.gif" alt=":wik:" title="Whish I knew"><br><br><blockquote><div><cite>Kopyloff писал(а):</cite>А то порой проще новое приложение написать, чем чьи-то исходники раскурить.</div></blockquote><br>Ага, и протокол обмена расшифровать проще чем документацию почитать... <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_e_wink.gif" alt=";)" title="Wink"></div>
+
+					<div id="sig142990" class="signature"><span style="font-size: 100%; line-height: 116%;"><span style="color: #4040BF">1. Робот не может ответить отказом на предложение человека выпить или своим бездействием допустить, чтобы человек напился один.</span></span></div>
+
+			</div>
+
+			
+				<dl class="postprofile" id="profile3828">
+					<dt>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3828"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/3828.jpg" width="79" height="90" alt="Аватара пользователя"></a><br>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3828">UAVpilot</a>
+					</dt>
+
+					<dd>Мастер</dd>
+				<dd>&nbsp;</dd>
+
+				<dd><strong>Сообщения:</strong> 15928</dd><dd><strong>Зарегистрирован:</strong> 17 апр 2012, 14:58</dd><dd><strong>Откуда:</strong> Москва</dd>
+					<dd class="user-reputation"><strong>Репутация:</strong> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.userdetails(&#39;3828&#39;, &#39;142990&#39;); return false;"><strong>3879</strong></a></dd>
+					
+					<dd><strong>Медальки:</strong> <a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=40&amp;t=1930&amp;p=33092#p33092" title="За модернизацию линейных подшипников"></a>
+<a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=3&amp;t=3369&amp;start=40&amp;p=112771#p112771" title="За пересадку мозга AG-400"></a></dd>
+				
+					<dd><strong>Настоящее имя:</strong> Сергей</dd>
+				
+					<dd>
+						<ul class="profile-icons">
+							<li class="pm-icon"><a href="http://www.cnc-club.ru/forum/ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=142990" title="Личное сообщение"><span>Личное сообщение</span></a></li>
+						</ul>
+					</dd>
+				
+
+				</dl>
+			
+
+			<div class="back2top"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#wrap" class="top" title="Вернуться к началу">Вернуться к началу</a></div>
+
+			
+		</div>
+
+		<hr class="divider">
+	
+		<div id="p142991" class="post u5680 bg1 topic-starter">
+			
+			<div class="postbody">
+				
+							<ul class="profile-icons">
+								
+									<li>
+									<ul class="post-reputation">
+										<li class="rate-good-icon"></li>
+										<li class="reputation zero"><div title="Репутация записи"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.postdetails(&#39;142991&#39;); return false;">0</a></div></li>
+										
+									</ul>
+									</li>
+									<br>
+								
+
+							</ul>
+						
+					<script type="text/javascript">  post_id[11] = "#"+(11 + ((post_page_number-1)*20) + 1); </script>
+					<h3> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#p142991">Re: Управление частотником Huanyang по Modbus</a>  
+					<a class="named-href-to-post" onclick="copyToClipboard(&quot;[url=http://cnc-club.ru/forum/&quot;+topic_url+&quot;&amp;p=142991#p142991]&quot;+ $(&quot;#p142991 h3 a&quot;).first().text().replace(/&quot;/g,&quot;&quot;)+&quot; &quot;+post_id[11]+&quot;[/url]&quot;);"></a> 
+					<a class="name-quote" onclick="mozWrap($(&#39;#message-box textarea&#39;).get(0),&#39;[b]Kopyloff[/b], &#39;,&#39;&#39;); if ($(&#39;#qr_editor_div&#39;).css(&#39;display&#39;) != &#39;block&#39;) {dE(&#39;qr_editor_div&#39;);dE(&#39;qr_showeditor_div&#39;);}"></a>
+					  </h3>
+					<p class="author"> <script type="text/javascript">document.write(post_id[11]);</script>#12 <a href="http://www.cnc-club.ru/forum/viewtopic.php?p=142991#p142991"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_post_target.gif" width="11" height="9" alt="Сообщение" title="Сообщение"></a> <strong class="author"><a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=5680">Kopyloff</a></strong> » 05 окт 2014, 08:40 </p>
+
+					
+					<div class="content">Под виндой сначала как минимум нужно будет cygwin ставить, и только потом уже tcl/tk и bwidget. Слишком хлопотно пока для меня, но за ссылки всё-равно спасибо. При случае надо будет потестить, может с live-cd с линухом каким-нибудь..</div>
+
+					
+
+			</div>
+
+			
+				<dl class="postprofile profile_8" id="profile5680" style="height: 74px;"><div class="show-profile-div bg2"><a onclick="show_profile(&quot;.profile_8&quot;);"></a></div>
+					<dt>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=5680">Kopyloff</a>
+					</dt>
+
+					<dd>Мастер</dd>
+				<dd>&nbsp;</dd>
+
+				<dd><strong>Сообщения:</strong> 385</dd><dd><strong>Зарегистрирован:</strong> 28 мар 2013, 07:40</dd><dd><strong>Откуда:</strong> Первоуральск</dd>
+					<dd class="user-reputation"><strong>Репутация:</strong> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.userdetails(&#39;5680&#39;, &#39;142991&#39;); return false;"><strong>115</strong></a></dd>
+					
+					<dd><strong>Настоящее имя:</strong> Сергей</dd>
+				
+					<dd>
+						<ul class="profile-icons">
+							<li class="pm-icon"><a href="http://www.cnc-club.ru/forum/ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=142991" title="Личное сообщение"><span>Личное сообщение</span></a></li>
+						</ul>
+					</dd>
+				
+
+				</dl>
+			
+
+			<div class="back2top"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#wrap" class="top" title="Вернуться к началу">Вернуться к началу</a></div>
+
+			
+		</div>
+
+		<hr class="divider">
+	
+		<div id="p142992" class="post u5680 bg2 topic-starter">
+			
+			<div class="postbody">
+				
+							<ul class="profile-icons">
+								
+									<li>
+									<ul class="post-reputation">
+										<li class="rate-good-icon"></li>
+										<li class="reputation zero"><div title="Репутация записи"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.postdetails(&#39;142992&#39;); return false;">0</a></div></li>
+										
+									</ul>
+									</li>
+									<br>
+								
+
+							</ul>
+						
+					<script type="text/javascript">  post_id[12] = "#"+(12 + ((post_page_number-1)*20) + 1); </script>
+					<h3> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#p142992">Re: Управление частотником Huanyang по Modbus</a>  
+					<a class="named-href-to-post" onclick="copyToClipboard(&quot;[url=http://cnc-club.ru/forum/&quot;+topic_url+&quot;&amp;p=142992#p142992]&quot;+ $(&quot;#p142992 h3 a&quot;).first().text().replace(/&quot;/g,&quot;&quot;)+&quot; &quot;+post_id[12]+&quot;[/url]&quot;);"></a> 
+					<a class="name-quote" onclick="mozWrap($(&#39;#message-box textarea&#39;).get(0),&#39;[b]Kopyloff[/b], &#39;,&#39;&#39;); if ($(&#39;#qr_editor_div&#39;).css(&#39;display&#39;) != &#39;block&#39;) {dE(&#39;qr_editor_div&#39;);dE(&#39;qr_showeditor_div&#39;);}"></a>
+					  </h3>
+					<p class="author"> <script type="text/javascript">document.write(post_id[12]);</script>#13 <a href="http://www.cnc-club.ru/forum/viewtopic.php?p=142992#p142992"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_post_target.gif" width="11" height="9" alt="Сообщение" title="Сообщение"></a> <strong class="author"><a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=5680">Kopyloff</a></strong> » 05 окт 2014, 08:41 </p>
+
+					
+					<div class="content"><blockquote><div><cite>UAVpilot писал(а):</cite>Ага, и протокол обмена расшифровать проще чем документацию почитать... <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_e_wink.gif" alt=";)" title="Wink"></div></blockquote><br>Лёгких путей не ищем  <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/hehe.gif" alt=":hehehe:" title="Хе-хе-хе"></div>
+
+					
+
+			</div>
+
+			
+				<dl class="postprofile profile_9" id="profile5680" style="height: 134px;"><div class="show-profile-div "><a onclick="show_profile(&quot;.profile_9&quot;);"></a></div>
+					<dt>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=5680">Kopyloff</a>
+					</dt>
+
+					<dd>Мастер</dd>
+				<dd>&nbsp;</dd>
+
+				<dd><strong>Сообщения:</strong> 385</dd><dd><strong>Зарегистрирован:</strong> 28 мар 2013, 07:40</dd><dd><strong>Откуда:</strong> Первоуральск</dd>
+					<dd class="user-reputation"><strong>Репутация:</strong> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.userdetails(&#39;5680&#39;, &#39;142992&#39;); return false;"><strong>115</strong></a></dd>
+					
+					<dd><strong>Настоящее имя:</strong> Сергей</dd>
+				
+					<dd>
+						<ul class="profile-icons">
+							<li class="pm-icon"><a href="http://www.cnc-club.ru/forum/ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=142992" title="Личное сообщение"><span>Личное сообщение</span></a></li>
+						</ul>
+					</dd>
+				
+
+				</dl>
+			
+
+			<div class="back2top"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#wrap" class="top" title="Вернуться к началу">Вернуться к началу</a></div>
+
+			
+		</div>
+
+		<hr class="divider">
+	
+		<div id="p142994" class="post u3828 bg1">
+			
+			<div class="postbody">
+				
+							<ul class="profile-icons">
+								
+									<li>
+									<ul class="post-reputation">
+										<li class="rate-good-icon"></li>
+										<li class="reputation zero"><div title="Репутация записи"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.postdetails(&#39;142994&#39;); return false;">0</a></div></li>
+										
+									</ul>
+									</li>
+									<br>
+								
+
+							</ul>
+						
+					<script type="text/javascript">  post_id[13] = "#"+(13 + ((post_page_number-1)*20) + 1); </script>
+					<h3> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#p142994">Re: Управление частотником Huanyang по Modbus</a>  
+					<a class="named-href-to-post" onclick="copyToClipboard(&quot;[url=http://cnc-club.ru/forum/&quot;+topic_url+&quot;&amp;p=142994#p142994]&quot;+ $(&quot;#p142994 h3 a&quot;).first().text().replace(/&quot;/g,&quot;&quot;)+&quot; &quot;+post_id[13]+&quot;[/url]&quot;);"></a> 
+					<a class="name-quote" onclick="mozWrap($(&#39;#message-box textarea&#39;).get(0),&#39;[b]UAVpilot[/b], &#39;,&#39;&#39;); if ($(&#39;#qr_editor_div&#39;).css(&#39;display&#39;) != &#39;block&#39;) {dE(&#39;qr_editor_div&#39;);dE(&#39;qr_showeditor_div&#39;);}"></a>
+					  </h3>
+					<p class="author"> <script type="text/javascript">document.write(post_id[13]);</script>#14 <a href="http://www.cnc-club.ru/forum/viewtopic.php?p=142994#p142994"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_post_target.gif" width="11" height="9" alt="Сообщение" title="Сообщение"></a> <strong class="author"><a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3828">UAVpilot</a></strong> » 05 окт 2014, 09:10 </p>
+
+					
+					<div class="content"><blockquote><div><cite>Kopyloff писал(а):</cite>Под виндой сначала как минимум нужно будет cygwin ставить, и только потом уже tcl/tk и bwidget. </div></blockquote><br><blockquote><div><cite>Kopyloff писал(а):</cite>Лёгких путей не ищем <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/hehe.gif" alt=":hehehe:" title="Хе-хе-хе"></div></blockquote><br>Вот уж воистину!.. cygwin-то зачем?  <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_eek.gif" alt=":shock:" title="Shocked"></div>
+
+					<div id="sig142994" class="signature"><span style="font-size: 100%; line-height: 116%;"><span style="color: #4040BF">1. Робот не может ответить отказом на предложение человека выпить или своим бездействием допустить, чтобы человек напился один.</span></span></div>
+
+			</div>
+
+			
+				<dl class="postprofile profile_10" id="profile3828" style="height: 241px;"><div class="show-profile-div bg2"><a onclick="show_profile(&quot;.profile_10&quot;);"></a></div>
+					<dt>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3828"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/3828.jpg" width="79" height="90" alt="Аватара пользователя"></a><br>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3828">UAVpilot</a>
+					</dt>
+
+					<dd>Мастер</dd>
+				<dd>&nbsp;</dd>
+
+				<dd><strong>Сообщения:</strong> 15928</dd><dd><strong>Зарегистрирован:</strong> 17 апр 2012, 14:58</dd><dd><strong>Откуда:</strong> Москва</dd>
+					<dd class="user-reputation"><strong>Репутация:</strong> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.userdetails(&#39;3828&#39;, &#39;142994&#39;); return false;"><strong>3879</strong></a></dd>
+					
+					<dd><strong>Медальки:</strong> <a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=40&amp;t=1930&amp;p=33092#p33092" title="За модернизацию линейных подшипников"></a>
+<a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=3&amp;t=3369&amp;start=40&amp;p=112771#p112771" title="За пересадку мозга AG-400"></a></dd>
+				
+					<dd><strong>Настоящее имя:</strong> Сергей</dd>
+				
+					<dd>
+						<ul class="profile-icons">
+							<li class="pm-icon"><a href="http://www.cnc-club.ru/forum/ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=142994" title="Личное сообщение"><span>Личное сообщение</span></a></li>
+						</ul>
+					</dd>
+				
+
+				</dl>
+			
+
+			<div class="back2top"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#wrap" class="top" title="Вернуться к началу">Вернуться к началу</a></div>
+
+			
+		</div>
+
+		<hr class="divider">
+	
+		<div id="p142995" class="post u5680 bg2 topic-starter">
+			
+			<div class="postbody">
+				
+							<ul class="profile-icons">
+								
+									<li>
+									<ul class="post-reputation">
+										<li class="rate-good-icon"></li>
+										<li class="reputation zero"><div title="Репутация записи"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.postdetails(&#39;142995&#39;); return false;">0</a></div></li>
+										
+									</ul>
+									</li>
+									<br>
+								
+
+							</ul>
+						
+					<script type="text/javascript">  post_id[14] = "#"+(14 + ((post_page_number-1)*20) + 1); </script>
+					<h3> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#p142995">Re: Управление частотником Huanyang по Modbus</a>  
+					<a class="named-href-to-post" onclick="copyToClipboard(&quot;[url=http://cnc-club.ru/forum/&quot;+topic_url+&quot;&amp;p=142995#p142995]&quot;+ $(&quot;#p142995 h3 a&quot;).first().text().replace(/&quot;/g,&quot;&quot;)+&quot; &quot;+post_id[14]+&quot;[/url]&quot;);"></a> 
+					<a class="name-quote" onclick="mozWrap($(&#39;#message-box textarea&#39;).get(0),&#39;[b]Kopyloff[/b], &#39;,&#39;&#39;); if ($(&#39;#qr_editor_div&#39;).css(&#39;display&#39;) != &#39;block&#39;) {dE(&#39;qr_editor_div&#39;);dE(&#39;qr_showeditor_div&#39;);}"></a>
+					  </h3>
+					<p class="author"> <script type="text/javascript">document.write(post_id[14]);</script>#15 <a href="http://www.cnc-club.ru/forum/viewtopic.php?p=142995#p142995"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_post_target.gif" width="11" height="9" alt="Сообщение" title="Сообщение"></a> <strong class="author"><a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=5680">Kopyloff</a></strong> » 05 окт 2014, 09:28 </p>
+
+					
+					<div class="content">А как ещё установить и запустить tcl/tk и bwidget под Windows? Я, честно говоря, других способов не вижу...  <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/i-dont-know.gif" alt=":wik:" title="Whish I knew"></div>
+
+					
+
+			</div>
+
+			
+				<dl class="postprofile profile_11" id="profile5680" style="height: 74px;"><div class="show-profile-div "><a onclick="show_profile(&quot;.profile_11&quot;);"></a></div>
+					<dt>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=5680">Kopyloff</a>
+					</dt>
+
+					<dd>Мастер</dd>
+				<dd>&nbsp;</dd>
+
+				<dd><strong>Сообщения:</strong> 385</dd><dd><strong>Зарегистрирован:</strong> 28 мар 2013, 07:40</dd><dd><strong>Откуда:</strong> Первоуральск</dd>
+					<dd class="user-reputation"><strong>Репутация:</strong> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.userdetails(&#39;5680&#39;, &#39;142995&#39;); return false;"><strong>115</strong></a></dd>
+					
+					<dd><strong>Настоящее имя:</strong> Сергей</dd>
+				
+					<dd>
+						<ul class="profile-icons">
+							<li class="pm-icon"><a href="http://www.cnc-club.ru/forum/ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=142995" title="Личное сообщение"><span>Личное сообщение</span></a></li>
+						</ul>
+					</dd>
+				
+
+				</dl>
+			
+
+			<div class="back2top"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#wrap" class="top" title="Вернуться к началу">Вернуться к началу</a></div>
+
+			
+		</div>
+
+		<hr class="divider">
+	
+		<div id="p143159" class="post u3828 bg1">
+			
+			<div class="postbody">
+				
+							<ul class="profile-icons">
+								
+									<li>
+									<ul class="post-reputation">
+										<li class="rate-good-icon"></li>
+										<li class="reputation zero"><div title="Репутация записи"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.postdetails(&#39;143159&#39;); return false;">0</a></div></li>
+										
+									</ul>
+									</li>
+									<br>
+								
+
+							</ul>
+						
+					<script type="text/javascript">  post_id[15] = "#"+(15 + ((post_page_number-1)*20) + 1); </script>
+					<h3> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#p143159">Re: Управление частотником Huanyang по Modbus</a>  
+					<a class="named-href-to-post" onclick="copyToClipboard(&quot;[url=http://cnc-club.ru/forum/&quot;+topic_url+&quot;&amp;p=143159#p143159]&quot;+ $(&quot;#p143159 h3 a&quot;).first().text().replace(/&quot;/g,&quot;&quot;)+&quot; &quot;+post_id[15]+&quot;[/url]&quot;);"></a> 
+					<a class="name-quote" onclick="mozWrap($(&#39;#message-box textarea&#39;).get(0),&#39;[b]UAVpilot[/b], &#39;,&#39;&#39;); if ($(&#39;#qr_editor_div&#39;).css(&#39;display&#39;) != &#39;block&#39;) {dE(&#39;qr_editor_div&#39;);dE(&#39;qr_showeditor_div&#39;);}"></a>
+					  </h3>
+					<p class="author"> <script type="text/javascript">document.write(post_id[15]);</script>#16 <a href="http://www.cnc-club.ru/forum/viewtopic.php?p=143159#p143159"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_post_target.gif" width="11" height="9" alt="Сообщение" title="Сообщение"></a> <strong class="author"><a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3828">UAVpilot</a></strong> » 06 окт 2014, 00:19 </p>
+
+					
+					<div class="content">Первая-же ссылка в гугле: <!-- m --><a class="postlink" href="http://www.activestate.com/activetcl/downloads">http://www.activestate.com/activetcl/downloads</a><!-- m --><br><br>P.S. Специально для немощных положил рядом vfd.exe и vfdctl.exe. <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_e_smile.gif" alt=":)" title="Smile"></div>
+
+					<div id="sig143159" class="signature"><span style="font-size: 100%; line-height: 116%;"><span style="color: #4040BF">1. Робот не может ответить отказом на предложение человека выпить или своим бездействием допустить, чтобы человек напился один.</span></span></div>
+
+			</div>
+
+			
+				<dl class="postprofile profile_12" id="profile3828" style="height: 127px;"><div class="show-profile-div bg2"><a onclick="show_profile(&quot;.profile_12&quot;);"></a></div>
+					<dt>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3828"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/3828.jpg" width="79" height="90" alt="Аватара пользователя"></a><br>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3828">UAVpilot</a>
+					</dt>
+
+					<dd>Мастер</dd>
+				<dd>&nbsp;</dd>
+
+				<dd><strong>Сообщения:</strong> 15928</dd><dd><strong>Зарегистрирован:</strong> 17 апр 2012, 14:58</dd><dd><strong>Откуда:</strong> Москва</dd>
+					<dd class="user-reputation"><strong>Репутация:</strong> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.userdetails(&#39;3828&#39;, &#39;143159&#39;); return false;"><strong>3879</strong></a></dd>
+					
+					<dd><strong>Медальки:</strong> <a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=40&amp;t=1930&amp;p=33092#p33092" title="За модернизацию линейных подшипников"></a>
+<a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=3&amp;t=3369&amp;start=40&amp;p=112771#p112771" title="За пересадку мозга AG-400"></a></dd>
+				
+					<dd><strong>Настоящее имя:</strong> Сергей</dd>
+				
+					<dd>
+						<ul class="profile-icons">
+							<li class="pm-icon"><a href="http://www.cnc-club.ru/forum/ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=143159" title="Личное сообщение"><span>Личное сообщение</span></a></li>
+						</ul>
+					</dd>
+				
+
+				</dl>
+			
+
+			<div class="back2top"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#wrap" class="top" title="Вернуться к началу">Вернуться к началу</a></div>
+
+			
+		</div>
+
+		<hr class="divider">
+	
+		<div id="p143268" class="post u5680 bg2 topic-starter">
+			
+			<div class="postbody">
+				
+							<ul class="profile-icons">
+								
+									<li>
+									<ul class="post-reputation">
+										<li class="rate-good-icon"></li>
+										<li class="reputation zero"><div title="Репутация записи"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.postdetails(&#39;143268&#39;); return false;">0</a></div></li>
+										
+									</ul>
+									</li>
+									<br>
+								
+
+							</ul>
+						
+					<script type="text/javascript">  post_id[16] = "#"+(16 + ((post_page_number-1)*20) + 1); </script>
+					<h3> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#p143268">Re: Управление частотником Huanyang по Modbus</a>  
+					<a class="named-href-to-post" onclick="copyToClipboard(&quot;[url=http://cnc-club.ru/forum/&quot;+topic_url+&quot;&amp;p=143268#p143268]&quot;+ $(&quot;#p143268 h3 a&quot;).first().text().replace(/&quot;/g,&quot;&quot;)+&quot; &quot;+post_id[16]+&quot;[/url]&quot;);"></a> 
+					<a class="name-quote" onclick="mozWrap($(&#39;#message-box textarea&#39;).get(0),&#39;[b]Kopyloff[/b], &#39;,&#39;&#39;); if ($(&#39;#qr_editor_div&#39;).css(&#39;display&#39;) != &#39;block&#39;) {dE(&#39;qr_editor_div&#39;);dE(&#39;qr_showeditor_div&#39;);}"></a>
+					  </h3>
+					<p class="author"> <script type="text/javascript">document.write(post_id[16]);</script>#17 <a href="http://www.cnc-club.ru/forum/viewtopic.php?p=143268#p143268"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_post_target.gif" width="11" height="9" alt="Сообщение" title="Сообщение"></a> <strong class="author"><a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=5680">Kopyloff</a></strong> » 06 окт 2014, 15:26 </p>
+
+					
+					<div class="content">Я настолько немощен, что даже не могу ЕХЕ-шники скачать  <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/hehe.gif" alt=":hehehe:" title="Хе-хе-хе"><br><div class="inline-attachment">
+		<dl class="file">
+			<dt class="attach-image"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/8.png" alt="8.png" onclick="viewableArea(this);"></dt>
+			
+			<dd>8.png (9.89 Кб) Просмотров: 12080</dd>
+		</dl>
+		</div></div>
+
+					
+
+			</div>
+
+			
+				<dl class="postprofile" id="profile5680">
+					<dt>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=5680">Kopyloff</a>
+					</dt>
+
+					<dd>Мастер</dd>
+				<dd>&nbsp;</dd>
+
+				<dd><strong>Сообщения:</strong> 385</dd><dd><strong>Зарегистрирован:</strong> 28 мар 2013, 07:40</dd><dd><strong>Откуда:</strong> Первоуральск</dd>
+					<dd class="user-reputation"><strong>Репутация:</strong> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.userdetails(&#39;5680&#39;, &#39;143268&#39;); return false;"><strong>115</strong></a></dd>
+					
+					<dd><strong>Настоящее имя:</strong> Сергей</dd>
+				
+					<dd>
+						<ul class="profile-icons">
+							<li class="pm-icon"><a href="http://www.cnc-club.ru/forum/ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=143268" title="Личное сообщение"><span>Личное сообщение</span></a></li>
+						</ul>
+					</dd>
+				
+
+				</dl>
+			
+
+			<div class="back2top"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#wrap" class="top" title="Вернуться к началу">Вернуться к началу</a></div>
+
+			
+		</div>
+
+		<hr class="divider">
+	
+		<div id="p143300" class="post u3828 bg1">
+			
+			<div class="postbody">
+				
+							<ul class="profile-icons">
+								
+									<li>
+									<ul class="post-reputation">
+										<li class="rate-good-icon"></li>
+										<li class="reputation positive"><div title="Репутация записи"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.postdetails(&#39;143300&#39;); return false;">1</a></div></li>
+										
+									</ul>
+									</li>
+									<br>
+								
+
+							</ul>
+						
+					<script type="text/javascript">  post_id[17] = "#"+(17 + ((post_page_number-1)*20) + 1); </script>
+					<h3> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#p143300">Re: Управление частотником Huanyang по Modbus</a>  
+					<a class="named-href-to-post" onclick="copyToClipboard(&quot;[url=http://cnc-club.ru/forum/&quot;+topic_url+&quot;&amp;p=143300#p143300]&quot;+ $(&quot;#p143300 h3 a&quot;).first().text().replace(/&quot;/g,&quot;&quot;)+&quot; &quot;+post_id[17]+&quot;[/url]&quot;);"></a> 
+					<a class="name-quote" onclick="mozWrap($(&#39;#message-box textarea&#39;).get(0),&#39;[b]UAVpilot[/b], &#39;,&#39;&#39;); if ($(&#39;#qr_editor_div&#39;).css(&#39;display&#39;) != &#39;block&#39;) {dE(&#39;qr_editor_div&#39;);dE(&#39;qr_showeditor_div&#39;);}"></a>
+					  </h3>
+					<p class="author"> <script type="text/javascript">document.write(post_id[17]);</script>#18 <a href="http://www.cnc-club.ru/forum/viewtopic.php?p=143300#p143300"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_post_target.gif" width="11" height="9" alt="Сообщение" title="Сообщение"></a> <strong class="author"><a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3828">UAVpilot</a></strong> » 06 окт 2014, 18:12 </p>
+
+					
+					<div class="content">Видимо даже мой сервер ЕХЕ-шники не раздаёт, но может научить, как ставить Tcl/Tk...  <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/lol.gif" alt=":lol:" title="LOL"> <br><br>P.S. поправил.</div>
+
+					<div id="sig143300" class="signature"><span style="font-size: 100%; line-height: 116%;"><span style="color: #4040BF">1. Робот не может ответить отказом на предложение человека выпить или своим бездействием допустить, чтобы человек напился один.</span></span></div>
+
+			</div>
+
+			
+				<dl class="postprofile profile_13" id="profile3828" style="height: 125px;"><div class="show-profile-div bg2"><a onclick="show_profile(&quot;.profile_13&quot;);"></a></div>
+					<dt>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3828"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/3828.jpg" width="79" height="90" alt="Аватара пользователя"></a><br>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3828">UAVpilot</a>
+					</dt>
+
+					<dd>Мастер</dd>
+				<dd>&nbsp;</dd>
+
+				<dd><strong>Сообщения:</strong> 15928</dd><dd><strong>Зарегистрирован:</strong> 17 апр 2012, 14:58</dd><dd><strong>Откуда:</strong> Москва</dd>
+					<dd class="user-reputation"><strong>Репутация:</strong> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.userdetails(&#39;3828&#39;, &#39;143300&#39;); return false;"><strong>3879</strong></a></dd>
+					
+					<dd><strong>Медальки:</strong> <a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=40&amp;t=1930&amp;p=33092#p33092" title="За модернизацию линейных подшипников"></a>
+<a class="medal gold" href="http://cnc-club.ru/forum/viewtopic.php?f=3&amp;t=3369&amp;start=40&amp;p=112771#p112771" title="За пересадку мозга AG-400"></a></dd>
+				
+					<dd><strong>Настоящее имя:</strong> Сергей</dd>
+				
+					<dd>
+						<ul class="profile-icons">
+							<li class="pm-icon"><a href="http://www.cnc-club.ru/forum/ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=143300" title="Личное сообщение"><span>Личное сообщение</span></a></li>
+						</ul>
+					</dd>
+				
+
+				</dl>
+			
+
+			<div class="back2top"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#wrap" class="top" title="Вернуться к началу">Вернуться к началу</a></div>
+
+			
+		</div>
+
+		<hr class="divider">
+	
+		<div id="p143367" class="post u5680 bg2 topic-starter">
+			
+			<div class="postbody">
+				
+							<ul class="profile-icons">
+								
+									<li>
+									<ul class="post-reputation">
+										<li class="rate-good-icon"></li>
+										<li class="reputation positive"><div title="Репутация записи"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.postdetails(&#39;143367&#39;); return false;">1</a></div></li>
+										
+									</ul>
+									</li>
+									<br>
+								
+
+							</ul>
+						
+					<script type="text/javascript">  post_id[18] = "#"+(18 + ((post_page_number-1)*20) + 1); </script>
+					<h3> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#p143367">Re: Управление частотником Huanyang по Modbus</a>  
+					<a class="named-href-to-post" onclick="copyToClipboard(&quot;[url=http://cnc-club.ru/forum/&quot;+topic_url+&quot;&amp;p=143367#p143367]&quot;+ $(&quot;#p143367 h3 a&quot;).first().text().replace(/&quot;/g,&quot;&quot;)+&quot; &quot;+post_id[18]+&quot;[/url]&quot;);"></a> 
+					<a class="name-quote" onclick="mozWrap($(&#39;#message-box textarea&#39;).get(0),&#39;[b]Kopyloff[/b], &#39;,&#39;&#39;); if ($(&#39;#qr_editor_div&#39;).css(&#39;display&#39;) != &#39;block&#39;) {dE(&#39;qr_editor_div&#39;);dE(&#39;qr_showeditor_div&#39;);}"></a>
+					  </h3>
+					<p class="author"> <script type="text/javascript">document.write(post_id[18]);</script>#19 <a href="http://www.cnc-club.ru/forum/viewtopic.php?p=143367#p143367"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_post_target.gif" width="11" height="9" alt="Сообщение" title="Сообщение"></a> <strong class="author"><a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=5680">Kopyloff</a></strong> » 06 окт 2014, 20:56 </p>
+
+					
+					<div class="content">Потестил немного программки - здорово! Всё работает! Без бубна конечно не обошлось <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_e_smile.gif" alt=":)" title="Smile"><br>Запускал сначала vfd.exe (param.conf положил в ту же папку что и vfd.exe). Сначала словил сообщение об ошибке:<br><div class="inline-attachment">
+		<dl class="thumbnail">
+			 			
+					<dt><a class="colorbox cboxElement" href="http://www.cnc-club.ru/forum/download/file.php?id=34454&amp;mode=view"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/9.png" alt="Управление частотником Huanyang по Modbus 9.png" title="Управление частотником Huanyang по Modbus 9.png (102.51 Кб) Просмотров: 12043"></a></dt>
+				
+		</dl>
+		</div><br>Заругался значит на то что в винде COM-порт по другому называется. Поправил param.conf:<br><div>
+<a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#phpbb3bbcodes_spoiler" onclick="
+if (this.parentNode.getElementsByTagName(&#39;div&#39;)[0].style.display != &#39;&#39;) 
+{ 
+	this.parentNode.getElementsByTagName(&#39;div&#39;)[0].style.display = &#39;&#39;;
+	this.style.backgroundImage = &#39;url(/forum/images/custom/icon_minus.gif)&#39;;
+} 
+else
+{ 
+	this.parentNode.getElementsByTagName(&#39;div&#39;)[0].style.display = &#39;none&#39;;
+	this.style.backgroundImage = &#39;url(/forum/images/custom/icon_plus.gif)&#39;;
+} return false;" style="padding-right: 20px; background: transparent url(/forum/images/custom/icon_plus.gif) no-repeat scroll right;"><b></b> (для просмотра содержимого нажмите на ссылку)</a>
+
+<div style="display: none;">
+Вместо:<br>-------------------------------<br>set VFDport /dev/ttyUSB0<br>set VFDmode 38400,n,8,1<br>set VFDid 1<br>------------------------------<br><br>написал: <br>------------------------------<br>set VFDport COM1<br>set VFDmode 9600,n,8,1<br>set VFDid 1<br>------------------------------
+</div>
+</div><br>и заработало! Удалось скачать параметры с частотника и залить их обратно (те же, без изменений правда <img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_e_smile.gif" alt=":)" title="Smile">).<br>Было бы неплохо ещё сделать выгрузку текущих параметров в текстовый файл и возможность потом заливать эти параметры из текстового файла в частотник - цены бы этой софтине не было!<br><br>Потом попробовал запустить vfdctl.exe. Вылезло такое сообщение об ошибке:<br><div class="inline-attachment">
+		<dl class="thumbnail">
+			 			
+					<dt><a class="colorbox cboxElement" href="http://www.cnc-club.ru/forum/download/file.php?id=34455&amp;mode=view"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/10.png" alt="Управление частотником Huanyang по Modbus 10.png" title="Управление частотником Huanyang по Modbus 10.png (35.11 Кб) Просмотров: 12043"></a></dt>
+				
+		</dl>
+		</div><br>Файла с параметрами для этой софтины нет, но можно задавать параметры в командной строке, как сказано у автора в описании.<br>Забил в командной строке следующее: <dl class="codebox"><dt>Код: <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="selectCode(this); return false;">Выделить всё</a> • <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="viewableCode(this); return false;">Развернуть</a></dt><dd><pre><code class="avrasm"><span class="label">c:</span>\vfdctl<span class="preprocessor">.exe</span> <span class="number">1</span> COM1 <span class="number">9600</span>,N,<span class="number">8</span>,<span class="number">1</span></code></pre></dd></dl> и заработало!<br>Есть только замечание: на странице сайта с описанием программы сказано что надо задавать параметры в следующем порядке:<br><dl class="codebox"><dt>Код: <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="selectCode(this); return false;">Выделить всё</a> • <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="viewableCode(this); return false;">Развернуть</a></dt><dd><pre><code class="nginx"><span class="title">vfdctl</span> <span class="number">1</span> /dev/ttyUSB0 <span class="number">9600</span>,<span class="number">8</span>,N,<span class="number">1</span></code></pre></dd></dl><br>а нужно поменять местами параметры <span style="font-weight: bold">8</span> и <span style="font-weight: bold">N</span>, т.е.:<br><dl class="codebox"><dt>Код: <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="selectCode(this); return false;">Выделить всё</a> • <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="viewableCode(this); return false;">Развернуть</a></dt><dd><pre><code class="nginx"><span class="title">vfdctl</span> <span class="number">1</span> /dev/ttyUSB0 <span class="number">9600</span>,N,<span class="number">8</span>,<span class="number">1</span></code></pre></dd></dl><br><br>Ну и после этого удалось завращать шпиндель, менять частоту и наблюдать текущие параметры частотника. <br><div class="inline-attachment">
+		<dl class="thumbnail">
+			 			
+					<dt><a class="colorbox cboxElement" href="http://www.cnc-club.ru/forum/download/file.php?id=34458&amp;mode=view"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/12.png" alt="Управление частотником Huanyang по Modbus 12.png" title="Управление частотником Huanyang по Modbus 12.png (40.35 Кб) Просмотров: 12043"></a></dt>
+				
+		</dl>
+		</div><br>Супер! Спасибо <span style="font-weight: bold">UAVpilot</span> за этот софт!</div>
+
+					
+
+			</div>
+
+			
+				<dl class="postprofile" id="profile5680">
+					<dt>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=5680">Kopyloff</a>
+					</dt>
+
+					<dd>Мастер</dd>
+				<dd>&nbsp;</dd>
+
+				<dd><strong>Сообщения:</strong> 385</dd><dd><strong>Зарегистрирован:</strong> 28 мар 2013, 07:40</dd><dd><strong>Откуда:</strong> Первоуральск</dd>
+					<dd class="user-reputation"><strong>Репутация:</strong> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.userdetails(&#39;5680&#39;, &#39;143367&#39;); return false;"><strong>115</strong></a></dd>
+					
+					<dd><strong>Настоящее имя:</strong> Сергей</dd>
+				
+					<dd>
+						<ul class="profile-icons">
+							<li class="pm-icon"><a href="http://www.cnc-club.ru/forum/ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=143367" title="Личное сообщение"><span>Личное сообщение</span></a></li>
+						</ul>
+					</dd>
+				
+
+				</dl>
+			
+
+			<div class="back2top"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#wrap" class="top" title="Вернуться к началу">Вернуться к началу</a></div>
+
+			
+		</div>
+
+		<hr class="divider">
+	
+		<a id="unread"></a><div id="p143375" class="post u7920 bg1">
+			
+			<div class="postbody">
+				
+							<ul class="profile-icons">
+								
+									<li>
+									<ul class="post-reputation">
+										<li class="rate-good-icon"></li>
+										<li class="reputation positive"><div title="Репутация записи"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.postdetails(&#39;143375&#39;); return false;">1</a></div></li>
+										
+									</ul>
+									</li>
+									<br>
+								
+
+							</ul>
+						
+					<script type="text/javascript">  post_id[19] = "#"+(19 + ((post_page_number-1)*20) + 1); </script>
+					<h3> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#p143375">Re: Управление частотником Huanyang по Modbus</a>  
+					<a class="named-href-to-post" onclick="copyToClipboard(&quot;[url=http://cnc-club.ru/forum/&quot;+topic_url+&quot;&amp;p=143375#p143375]&quot;+ $(&quot;#p143375 h3 a&quot;).first().text().replace(/&quot;/g,&quot;&quot;)+&quot; &quot;+post_id[19]+&quot;[/url]&quot;);"></a> 
+					<a class="name-quote" onclick="mozWrap($(&#39;#message-box textarea&#39;).get(0),&#39;[b]AVK74[/b], &#39;,&#39;&#39;); if ($(&#39;#qr_editor_div&#39;).css(&#39;display&#39;) != &#39;block&#39;) {dE(&#39;qr_editor_div&#39;);dE(&#39;qr_showeditor_div&#39;);}"></a>
+					  </h3>
+					<p class="author"> <script type="text/javascript">document.write(post_id[19]);</script>#20 <a href="http://www.cnc-club.ru/forum/viewtopic.php?p=143375#p143375"><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/icon_post_target.gif" width="11" height="9" alt="Сообщение" title="Сообщение"></a> <strong class="author"><a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=7920" style="color: #0066CC;" class="username-coloured">AVK74</a></strong> » 06 окт 2014, 21:27 </p>
+
+					
+					<div class="content">Вот <!-- m --><a class="postlink" href="http://royaumedeole.fr/informatique/plugin-mach3-pour-vfdhuanyang/mach3-plugin-for-huanyang-vfd/">http://royaumedeole.fr/informatique/plu ... nyang-vfd/</a><!-- m --><br>Все совершенно четко расписано. У меня на подключение и настройку ушло пять минут.</div>
+
+					
+
+			</div>
+
+			
+				<dl class="postprofile profile_14" id="profile7920" style="height: 74px;"><div class="show-profile-div bg2"><a onclick="show_profile(&quot;.profile_14&quot;);"></a></div>
+					<dt>
+						<a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=7920" style="color: #0066CC;" class="username-coloured">AVK74</a>
+					</dt>
+
+					<dd>Почётный участник<br><img src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/cnc-club.ru-premium-member.png" alt="Почётный участник" title="Почётный участник"></dd>
+				<dd>&nbsp;</dd>
+
+				<dd><strong>Сообщения:</strong> 1537</dd><dd><strong>Зарегистрирован:</strong> 02 июл 2013, 09:03</dd><dd><strong>Откуда:</strong> Уфа</dd>
+					<dd class="user-reputation"><strong>Репутация:</strong> <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jRS.userdetails(&#39;7920&#39;, &#39;143375&#39;); return false;"><strong>244</strong></a></dd>
+					
+					<dd>
+						<ul class="profile-icons">
+							<li class="pm-icon"><a href="http://www.cnc-club.ru/forum/ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=143375" title="Личное сообщение"><span>Личное сообщение</span></a></li>
+						</ul>
+					</dd>
+				
+
+				</dl>
+			
+
+			<div class="back2top"><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#wrap" class="top" title="Вернуться к началу">Вернуться к началу</a></div>
+
+			
+		</div>
+
+		<hr class="divider">
+	
+
+	<script language="javascript">
+		$("div.post:last").before('<a id="unread"></a>');
+	</script>
+
+	
+	<!--	<div style="
+				border: 1px solid rgb(204, 204, 204);
+				background: url('/custom_scripts/transparent_bg_50.png') repeat scroll 0 0;
+				font-size: 16px;
+				font-weight: bold;
+				left: 0pt;
+				position: fixed;
+				text-align: center;
+				top: 0pt;
+				width: 100%;
+				z-index: 100;
+				color: rgb(16, 82, 137);
+				display: block;
+				padding: 5px;">Вы можете создавать темы и отвечать в форумах без регистрации.</div>
+	-->
+	
+		<form id="viewtopic" method="post" action="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892">
+
+		<fieldset class="display-options" style="margin-top: 0; ">
+			<a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892&amp;start=20" class="right-box right">След.</a>
+			<label>Показать сообщения за: <select name="st" id="st"><option value="0" selected="selected">Все сообщения</option><option value="1">1 день</option><option value="7">7 дней</option><option value="14">2 недели</option><option value="30">1 месяц</option><option value="90">3 месяца</option><option value="180">6 месяцев</option><option value="365">1 год</option></select></label>
+			<label>Поле сортировки <select name="sk" id="sk"><option value="a">Автор</option><option value="t" selected="selected">Время размещения</option><option value="s">Заголовок</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">по возрастанию</option><option value="d">по убыванию</option></select> <input type="submit" name="sort" value="Перейти" class="button2"></label>
+			
+		</fieldset>
+
+		</form>
+		<hr>
+	
+
+	<div class="topic-actions">
+		<div class="buttons">
+		
+			<div class="reply-icon"><a href="http://www.cnc-club.ru/forum/posting.php?mode=reply&amp;f=16&amp;t=5892" title="Ответить"><span></span>Ответить</a></div>
+		
+		</div>
+
+		
+			<div class="pagination">
+				Сообщений: 133
+				 • <a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892#" onclick="jumpto(); return false;" title="Перейти на страницу…">Страница <strong>1</strong> из <strong>7</strong></a> • <span><strong>1</strong><span class="page-sep">, </span><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892&amp;start=20">2</a><span class="page-sep">, </span><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892&amp;start=40">3</a><span class="page-sep">, </span><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892&amp;start=60">4</a><span class="page-sep">, </span><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892&amp;start=80">5</a><span class="page-dots"> ... </span><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892&amp;start=120">7</a></span>
+			</div>
+		
+	</div>
+
+	
+	<p></p><p><a href="http://www.cnc-club.ru/forum/viewforum.php?f=16" class="left-box left" accesskey="r">Вернуться в Windows / Mach</a></p>
+
+	<form method="post" id="jumpbox" action="http://www.cnc-club.ru/forum/viewforum.php" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Перейти:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms[&#39;jumpbox&#39;].submit() }">
+			
+				<option value="-1">Выберите форум</option>
+			<option value="-1">------------------</option>
+				<option value="136">Wiki</option>
+			
+				<option value="135">&nbsp; &nbsp;Wiki нашего клуба:  cnc-club.ru/wiki</option>
+			
+				<option value="6">Станки</option>
+			
+				<option value="146">&nbsp; &nbsp;Фрезерные станки по металлам</option>
+			
+				<option value="147">&nbsp; &nbsp;Фрезерные станки по дереву и пластикам, гравировальные станки, роутеры</option>
+			
+				<option value="148">&nbsp; &nbsp;Токарные станки</option>
+			
+				<option value="149">&nbsp; &nbsp;Лазерные, плазменные и другие раскроечные станки</option>
+			
+				<option value="150">&nbsp; &nbsp;3D принтеры</option>
+			
+				<option value="166">&nbsp; &nbsp;Роботы</option>
+			
+				<option value="151">&nbsp; &nbsp;Прочие станки</option>
+			
+				<option value="34">&nbsp; &nbsp;Изделия</option>
+			
+				<option value="152">&nbsp; &nbsp;Общие вопросы</option>
+			
+				<option value="3">&nbsp; &nbsp;Станки</option>
+			
+				<option value="19">Предложения покупки/продажи/услуг</option>
+			
+				<option value="162">&nbsp; &nbsp;Куплю</option>
+			
+				<option value="163">&nbsp; &nbsp;Продам</option>
+			
+				<option value="164">&nbsp; &nbsp;Услуги</option>
+			
+				<option value="165">&nbsp; &nbsp;Продано</option>
+			
+				<option value="138">&nbsp; &nbsp;Карантин</option>
+			
+				<option value="153">Системы ЧПУ</option>
+			
+				<option value="15">&nbsp; &nbsp;LinuxCNC</option>
+			
+				<option value="158">&nbsp; &nbsp;&nbsp; &nbsp;MESA</option>
+			
+				<option value="16" selected="selected">&nbsp; &nbsp;Windows / Mach</option>
+			
+				<option value="144">&nbsp; &nbsp;&nbsp; &nbsp;KFlop</option>
+			
+				<option value="142">&nbsp; &nbsp;Промышленные стойки</option>
+			
+				<option value="14">Программное обеспечение</option>
+			
+				<option value="35">&nbsp; &nbsp;Новости и анонсы</option>
+			
+				<option value="154">&nbsp; &nbsp;CAD пакеты</option>
+			
+				<option value="160">&nbsp; &nbsp;&nbsp; &nbsp;SolidWorks</option>
+			
+				<option value="161">&nbsp; &nbsp;&nbsp; &nbsp;Компас</option>
+			
+				<option value="155">&nbsp; &nbsp;CAM пакеты</option>
+			
+				<option value="159">&nbsp; &nbsp;&nbsp; &nbsp;Artcam</option>
+			
+				<option value="157">&nbsp; &nbsp;Прочие вопросы Linux</option>
+			
+				<option value="156">&nbsp; &nbsp;Прочие вопросы Windows</option>
+			
+				<option value="39">Детали станков</option>
+			
+				<option value="40">&nbsp; &nbsp;Механика</option>
+			
+				<option value="41">&nbsp; &nbsp;Электроника</option>
+			
+				<option value="42">&nbsp; &nbsp;Двигатели и шпиндели</option>
+			
+				<option value="27">Обработка</option>
+			
+				<option value="28">&nbsp; &nbsp;Материалы</option>
+			
+				<option value="29">&nbsp; &nbsp;Инструмент</option>
+			
+				<option value="30">&nbsp; &nbsp;Видео</option>
+			
+				<option value="36">Мероприятия</option>
+			
+				<option value="37">&nbsp; &nbsp;Мероприятия</option>
+			
+				<option value="131">Площадки друзей cnc-club.ru</option>
+			
+				<option value="134">&nbsp; &nbsp;Chipmaker.ru</option>
+			
+				<option value="25">Ресурсы сети</option>
+			
+				<option value="26">&nbsp; &nbsp;Интернет сайты</option>
+			
+				<option value="31">&nbsp; &nbsp;Организации</option>
+			
+				<option value="17">Сайт</option>
+			
+				<option value="18">&nbsp; &nbsp;Обсуждение сайта</option>
+			
+				<option value="38">&nbsp; &nbsp;Оффтоп</option>
+			
+				<option value="140">Женский раздел</option>
+			
+				<option value="141">&nbsp; &nbsp;Женский раздел</option>
+			
+				<option value="33">English forum</option>
+			
+				<option value="132">Архив</option>
+			
+				<option value="133">&nbsp; &nbsp;Архив</option>
+			
+			</select>
+			<input type="submit" value="Перейти" class="button2">
+		</fieldset>
+	</form>
+
+
+		<h3>Кто сейчас на конференции</h3>
+		<p>Зарегистрированные пользователи: <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=1346">_taras_</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=24352">Argon-11</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=29377" style="color: #820000;" class="username-coloured">Ariets3</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=29411" style="color: #820000;" class="username-coloured">Анатолий 90</a>, <span style="color: #9E8DA7;" class="username-coloured">Bing [Bot]</span>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=3730" style="color: #FF9900;" class="username-coloured">CNC-Logic</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=28570" style="color: #820000;" class="username-coloured">deathknight</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=28295">digitcat</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=26725">fid</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=5480">FLUKE</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=24040">Frezer_PU</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=8105" style="color: #0066CC;" class="username-coloured">frezeryga</a>, <span style="color: #9E8DA7;" class="username-coloured">Google [Bot]</span>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=27210" style="color: #820000;" class="username-coloured">guges</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=9489" style="color: #0066CC;" class="username-coloured">megagad</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=12717">netraider</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=4222">nik1</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=13179">Nonstopich</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=11861">raddd</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=10927">roct</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=29152" style="color: #FF9900;" class="username-coloured">RusRob</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=26012">Samodelkin 88</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=29247">santyago_support</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=19785">ScrewDriver</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=10794">SDAMASK</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=21077">shatrovmaxim</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=29151">Shlang</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=10855">sidjagin</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=8663">skytronix</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=4555">SVP</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=13049">trafbite</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=28244" style="color: #820000;" class="username-coloured">truut</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=8344" style="color: #0066CC;" class="username-coloured">vala</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=7983">verser</a>, <span style="color: #9E8DA7;" class="username-coloured">Yandex [bot]</span>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=5441">Yur_ra</a>, <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=viewprofile&amp;u=24523" style="color: #820000;" class="username-coloured">Виктор_чпу</a></p>
+	
+	<script language="javascript">shrink_profiles();</script>
+</div> 
+<script language="javascript">
+		// Women logo
+		if (window.location.href.indexOf("f=141") != -1 )
+		{
+			jQuery("#logo img").attr("src","/forum/styles/prosilver/theme/images/cnc-club.ru%20women.png");
+		}
+	</script>
+
+
+	<h3>Поделиться</h3>	
+	<div class="yashare-auto-init" data-yasharel10n="ru" data-yasharetype="icon" data-yasharequickservices="yaru,vkontakte,facebook,twitter,gplus"><span class="b-share"><a class="b-share__handle" id="ya-share-0.9044974878058336-1528383604932" data-hdirection="" data-vdirection=""><img alt="" class="b-share-icon" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/b-share.png"></a><a rel="nofollow" target="_blank" title="ВКонтакте" class="b-share__handle b-share__link b-share-btn__vkontakte" href="https://share.yandex.net/go.xml?service=vkontakte&amp;url=http%3A%2F%2Fwww.cnc-club.ru%2Fforum%2Fviewtopic.php%3Ff%3D16%26t%3D5892&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC%20Huanyang%20%D0%BF%D0%BE%20Modbus%20%E2%80%A2%20%D0%A1%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%20%D1%81%20%D0%A7%D0%9F%D0%A3%20%D0%BD%D0%B0%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5%20cnc-club.ru" data-service="vkontakte"><span class="b-share-icon b-share-icon_vkontakte"></span></a><a rel="nofollow" target="_blank" title="Facebook" class="b-share__handle b-share__link b-share-btn__facebook" href="https://share.yandex.net/go.xml?service=facebook&amp;url=http%3A%2F%2Fwww.cnc-club.ru%2Fforum%2Fviewtopic.php%3Ff%3D16%26t%3D5892&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC%20Huanyang%20%D0%BF%D0%BE%20Modbus%20%E2%80%A2%20%D0%A1%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%20%D1%81%20%D0%A7%D0%9F%D0%A3%20%D0%BD%D0%B0%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5%20cnc-club.ru" data-service="facebook"><span class="b-share-icon b-share-icon_facebook"></span></a><a rel="nofollow" target="_blank" title="Twitter" class="b-share__handle b-share__link b-share-btn__twitter" href="https://share.yandex.net/go.xml?service=twitter&amp;url=http%3A%2F%2Fwww.cnc-club.ru%2Fforum%2Fviewtopic.php%3Ff%3D16%26t%3D5892&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC%20Huanyang%20%D0%BF%D0%BE%20Modbus%20%E2%80%A2%20%D0%A1%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%20%D1%81%20%D0%A7%D0%9F%D0%A3%20%D0%BD%D0%B0%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5%20cnc-club.ru" data-service="twitter"><span class="b-share-icon b-share-icon_twitter"></span></a><a rel="nofollow" target="_blank" title="Google Plus" class="b-share__handle b-share__link b-share-btn__gplus" href="https://share.yandex.net/go.xml?service=gplus&amp;url=http%3A%2F%2Fwww.cnc-club.ru%2Fforum%2Fviewtopic.php%3Ff%3D16%26t%3D5892&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC%20Huanyang%20%D0%BF%D0%BE%20Modbus%20%E2%80%A2%20%D0%A1%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%20%D1%81%20%D0%A7%D0%9F%D0%A3%20%D0%BD%D0%B0%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5%20cnc-club.ru" data-service="gplus"><span class="b-share-icon b-share-icon_gplus"></span></a></span></div> 
+</div><div id="yandex_ad"><div id="yandex_rtb_R-A-152153-1"></div></div>
+
+<div id="page-footer">
+	<div class="navbar">
+		<ul class="linklist">
+			<li class="icon-home"><a href="http://www.cnc-club.ru/forum/index.php" accesskey="h">Список форумов</a></li>
+				
+			<li class="rightside">
+				<!-- Added by MOD --><a href="http://www.cnc-club.ru/forum/viewtopic.php?f=16&amp;t=5892&amp;mobile_style=on">Мобильная версия</a> • <a href="http://www.cnc-club.ru/forum/memberlist.php?mode=leaders">Наша команда</a> • <a href="http://www.cnc-club.ru/forum/ucp.php?mode=delete_cookies">Удалить cookies конференции</a> • Часовой пояс: UTC + 3 часа 
+			</li>
+		</ul>
+	</div>
+	
+	<div class="copyright">
+		<a href="http://www.cnc-box.ru/" title="Комплектующие для станков с ЧПУ"><img class="cnc-box-adv" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/cnc-box.png" alt="Комплектующие для станков с ЧПУ" title="Комплектующие для станков с ЧПУ"></a>
+		<div class="cnc-box-adv">
+			При поддержке <a href="http://www.cnc-box.ru/" title="Комплектующие для станков с ЧПУ">CNC-BOX.RU</a><br>
+			Комплектующие для станков с ЧПУ
+		</div>
+		<div>
+			Powered by <a href="http://www.phpbb.com/">phpBB</a>® Forum Software © phpBB Group<br>Powered by <a href="http://pico88.github.com/phpBB-Reputation-System/" title="Reputation System">Reputation System</a> © Pico88
+			<br><a href="http://www.phpbbguru.net/">Русская поддержка phpBB</a>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+
+
+<div id="reputation-popup">
+<a href="http://pico88.github.com/phpBB-Reputation-System/" title="Reputation System">Reputation System</a> ©'</div>
+
+<script type="text/javascript">
+// <![CDATA[
+	window.jQuery || document.write(unescape('%3Cscript src="./styles/prosilver/template/reputation/jquery-1.10.1.min.js" type="text/javascript"%3E%3C/script%3E'));
+// ]]>
+</script>
+<script type="text/javascript">
+// <![CDATA[
+	var rsfile = './reputation.php';
+	var rsdelete = 'Действительно удалить эту оценку?';
+	var rsclearpost = '{ RS_CLEAR_POST_CONFIRM }';
+	var rsclearuser = '{ RS_CLEAR_USER_CONFIRM }';
+	var requestSent = false;
+// ]]>
+</script>
+<script type="text/javascript" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/jquery.reputation.js.Без названия"></script>
+
+
+
+
+<script>
+	// before load functions
+	before_load();
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1851786-2', 'cnc-club.ru');
+  
+</script>
+<script src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/ga_customs.js.Без названия"></script>
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter4112881 = new Ya.Metrika({
+                    id:4112881,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/4112881" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter --><!--  Yandex.Share -->
+	<script type="text/javascript" src="./Управление частотником Huanyang по Modbus • Станки с ЧПУ на форуме cnc-club.ru_files/share.js.Без названия" charset="utf-8"></script>
+<!-- /Yandex.Share -->
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none; padding-bottom: 50px; padding-right: 50px;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div class="b-share-popup-wrap b-share-popup-wrap_state_hidden" id="ya-share-0.8096862103108065-1528383604931-popup"><div class="b-share-popup b-share-popup_down b-share-popup_to-right"><div class="b-share-popup__i"><div class="b-share-popup__main  b-share-popup_yandexed"><div class="b-share-popup__header b-share-popup__header_first">Поделитесь с друзьями</div><a rel="nofollow" target="_blank" href="https://share.yandex.net/go.xml?service=vkontakte&amp;url=http%3A%2F%2Fwww.cnc-club.ru%2Fforum%2Fviewtopic.php%3Ff%3D16%26t%3D5892&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC%20Huanyang%20%D0%BF%D0%BE%20Modbus%20%E2%80%A2%20%D0%A1%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%20%D1%81%20%D0%A7%D0%9F%D0%A3%20%D0%BD%D0%B0%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5%20cnc-club.ru" class="b-share-popup__item" data-service="vkontakte"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_vkontakte"></span></span><span class="b-share-popup__item__text">ВКонтакте</span></a><a rel="nofollow" target="_blank" href="https://share.yandex.net/go.xml?service=odnoklassniki&amp;url=http%3A%2F%2Fwww.cnc-club.ru%2Fforum%2Fviewtopic.php%3Ff%3D16%26t%3D5892&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC%20Huanyang%20%D0%BF%D0%BE%20Modbus%20%E2%80%A2%20%D0%A1%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%20%D1%81%20%D0%A7%D0%9F%D0%A3%20%D0%BD%D0%B0%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5%20cnc-club.ru" class="b-share-popup__item" data-service="odnoklassniki"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_odnoklassniki"></span></span><span class="b-share-popup__item__text">Одноклассники</span></a><a rel="nofollow" target="_blank" href="https://share.yandex.net/go.xml?service=twitter&amp;url=http%3A%2F%2Fwww.cnc-club.ru%2Fforum%2Fviewtopic.php%3Ff%3D16%26t%3D5892&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC%20Huanyang%20%D0%BF%D0%BE%20Modbus%20%E2%80%A2%20%D0%A1%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%20%D1%81%20%D0%A7%D0%9F%D0%A3%20%D0%BD%D0%B0%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5%20cnc-club.ru" class="b-share-popup__item" data-service="twitter"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_twitter"></span></span><span class="b-share-popup__item__text">Twitter</span></a><a rel="nofollow" target="_blank" href="https://share.yandex.net/go.xml?service=facebook&amp;url=http%3A%2F%2Fwww.cnc-club.ru%2Fforum%2Fviewtopic.php%3Ff%3D16%26t%3D5892&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC%20Huanyang%20%D0%BF%D0%BE%20Modbus%20%E2%80%A2%20%D0%A1%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%20%D1%81%20%D0%A7%D0%9F%D0%A3%20%D0%BD%D0%B0%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5%20cnc-club.ru" class="b-share-popup__item" data-service="facebook"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_facebook"></span></span><span class="b-share-popup__item__text">Facebook</span></a><a rel="nofollow" target="_blank" href="https://share.yandex.net/go.xml?service=moimir&amp;url=http%3A%2F%2Fwww.cnc-club.ru%2Fforum%2Fviewtopic.php%3Ff%3D16%26t%3D5892&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC%20Huanyang%20%D0%BF%D0%BE%20Modbus%20%E2%80%A2%20%D0%A1%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%20%D1%81%20%D0%A7%D0%9F%D0%A3%20%D0%BD%D0%B0%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5%20cnc-club.ru" class="b-share-popup__item" data-service="moimir"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_moimir"></span></span><span class="b-share-popup__item__text">Мой Мир</span></a><a rel="nofollow" target="_blank" href="https://share.yandex.net/go.xml?service=lj&amp;url=http%3A%2F%2Fwww.cnc-club.ru%2Fforum%2Fviewtopic.php%3Ff%3D16%26t%3D5892&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC%20Huanyang%20%D0%BF%D0%BE%20Modbus%20%E2%80%A2%20%D0%A1%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%20%D1%81%20%D0%A7%D0%9F%D0%A3%20%D0%BD%D0%B0%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5%20cnc-club.ru" class="b-share-popup__item" data-service="lj"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_lj"></span></span><span class="b-share-popup__item__text">LiveJournal</span></a><a rel="nofollow" target="_blank" href="https://share.yandex.net/go.xml?service=gplus&amp;url=http%3A%2F%2Fwww.cnc-club.ru%2Fforum%2Fviewtopic.php%3Ff%3D16%26t%3D5892&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC%20Huanyang%20%D0%BF%D0%BE%20Modbus%20%E2%80%A2%20%D0%A1%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%20%D1%81%20%D0%A7%D0%9F%D0%A3%20%D0%BD%D0%B0%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5%20cnc-club.ru" class="b-share-popup__item" data-service="gplus"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_gplus"></span></span><span class="b-share-popup__item__text">Google Plus</span></a><a href="http://api.yandex.ru/share/" class="b-share-popup__yandex">Яндекс</a></div></div><div class="b-share-popup__tail"></div></div></div><div class="b-share-popup-wrap b-share-popup-wrap_state_hidden" id="ya-share-0.9044974878058336-1528383604932-popup"><div class="b-share-popup b-share-popup_down b-share-popup_to-right"><div class="b-share-popup__i"><div class="b-share-popup__main  b-share-popup_yandexed"><div class="b-share-popup__header b-share-popup__header_first">Поделитесь с друзьями</div><a rel="nofollow" target="_blank" href="https://share.yandex.net/go.xml?service=vkontakte&amp;url=http%3A%2F%2Fwww.cnc-club.ru%2Fforum%2Fviewtopic.php%3Ff%3D16%26t%3D5892&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC%20Huanyang%20%D0%BF%D0%BE%20Modbus%20%E2%80%A2%20%D0%A1%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%20%D1%81%20%D0%A7%D0%9F%D0%A3%20%D0%BD%D0%B0%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5%20cnc-club.ru" class="b-share-popup__item" data-service="vkontakte"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_vkontakte"></span></span><span class="b-share-popup__item__text">ВКонтакте</span></a><a rel="nofollow" target="_blank" href="https://share.yandex.net/go.xml?service=odnoklassniki&amp;url=http%3A%2F%2Fwww.cnc-club.ru%2Fforum%2Fviewtopic.php%3Ff%3D16%26t%3D5892&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC%20Huanyang%20%D0%BF%D0%BE%20Modbus%20%E2%80%A2%20%D0%A1%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%20%D1%81%20%D0%A7%D0%9F%D0%A3%20%D0%BD%D0%B0%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5%20cnc-club.ru" class="b-share-popup__item" data-service="odnoklassniki"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_odnoklassniki"></span></span><span class="b-share-popup__item__text">Одноклассники</span></a><a rel="nofollow" target="_blank" href="https://share.yandex.net/go.xml?service=twitter&amp;url=http%3A%2F%2Fwww.cnc-club.ru%2Fforum%2Fviewtopic.php%3Ff%3D16%26t%3D5892&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC%20Huanyang%20%D0%BF%D0%BE%20Modbus%20%E2%80%A2%20%D0%A1%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%20%D1%81%20%D0%A7%D0%9F%D0%A3%20%D0%BD%D0%B0%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5%20cnc-club.ru" class="b-share-popup__item" data-service="twitter"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_twitter"></span></span><span class="b-share-popup__item__text">Twitter</span></a><a rel="nofollow" target="_blank" href="https://share.yandex.net/go.xml?service=facebook&amp;url=http%3A%2F%2Fwww.cnc-club.ru%2Fforum%2Fviewtopic.php%3Ff%3D16%26t%3D5892&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC%20Huanyang%20%D0%BF%D0%BE%20Modbus%20%E2%80%A2%20%D0%A1%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%20%D1%81%20%D0%A7%D0%9F%D0%A3%20%D0%BD%D0%B0%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5%20cnc-club.ru" class="b-share-popup__item" data-service="facebook"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_facebook"></span></span><span class="b-share-popup__item__text">Facebook</span></a><a rel="nofollow" target="_blank" href="https://share.yandex.net/go.xml?service=moimir&amp;url=http%3A%2F%2Fwww.cnc-club.ru%2Fforum%2Fviewtopic.php%3Ff%3D16%26t%3D5892&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC%20Huanyang%20%D0%BF%D0%BE%20Modbus%20%E2%80%A2%20%D0%A1%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%20%D1%81%20%D0%A7%D0%9F%D0%A3%20%D0%BD%D0%B0%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5%20cnc-club.ru" class="b-share-popup__item" data-service="moimir"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_moimir"></span></span><span class="b-share-popup__item__text">Мой Мир</span></a><a rel="nofollow" target="_blank" href="https://share.yandex.net/go.xml?service=lj&amp;url=http%3A%2F%2Fwww.cnc-club.ru%2Fforum%2Fviewtopic.php%3Ff%3D16%26t%3D5892&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC%20Huanyang%20%D0%BF%D0%BE%20Modbus%20%E2%80%A2%20%D0%A1%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%20%D1%81%20%D0%A7%D0%9F%D0%A3%20%D0%BD%D0%B0%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5%20cnc-club.ru" class="b-share-popup__item" data-service="lj"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_lj"></span></span><span class="b-share-popup__item__text">LiveJournal</span></a><a rel="nofollow" target="_blank" href="https://share.yandex.net/go.xml?service=gplus&amp;url=http%3A%2F%2Fwww.cnc-club.ru%2Fforum%2Fviewtopic.php%3Ff%3D16%26t%3D5892&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC%20Huanyang%20%D0%BF%D0%BE%20Modbus%20%E2%80%A2%20%D0%A1%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%20%D1%81%20%D0%A7%D0%9F%D0%A3%20%D0%BD%D0%B0%20%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%B5%20cnc-club.ru" class="b-share-popup__item" data-service="gplus"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_gplus"></span></span><span class="b-share-popup__item__text">Google Plus</span></a><a href="http://api.yandex.ru/share/" class="b-share-popup__yandex">Яндекс</a></div></div><div class="b-share-popup__tail"></div></div></div></body></html>
