@@ -20,7 +20,7 @@
 */
 
 #include "grbl.h"
-
+#include "grbl_ext.h"
 
 static float pwm_gradient; // Precalulated value to speed up rpm to PWM conversions.
 
@@ -214,4 +214,5 @@ void spindle_sync(uint8_t state, float rpm)
   if (sys.state == STATE_CHECK_MODE) { return; }
   protocol_buffer_synchronize(); // Empty planner buffer to ensure spindle is set when programmed.
   spindle_set_state(state,rpm);
+  spindle_sync_ext(state, rpm);
 }
