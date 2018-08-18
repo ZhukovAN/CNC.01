@@ -45,12 +45,12 @@
 #define I2C_FREE		0b10111111  	// Trans is Free				Битмаска снятия флага занятости.
 
 #ifdef I2C_MASTER
-#define MACRO_i2c_WhatDo_MasterOut 	(MasterOutFunc)();		// Макросы для режимо выхода. Пока тут функция, но может быть что угодно
+#define MACRO_i2c_WhatDo_MasterOut 	(I2C_MasterOutFunc)();		// Макросы для режимо выхода. Пока тут функция, но может быть что угодно
 #endif
 #ifdef I2C_SLAVE
-#define MACRO_i2c_WhatDo_SlaveOut   (SlaveOutFunc)();
+#define MACRO_i2c_WhatDo_SlaveOut   (I2C_SlaveOutFunc)();
 #endif
-#define MACRO_i2c_WhatDo_ErrorOut   (ErrorOutFunc)();
+#define MACRO_i2c_WhatDo_ErrorOut   (I2C_ErrorOutFunc)();
 
 
 typedef void (*IIC_F)(void);								// Тип указателя на функцию
@@ -75,13 +75,13 @@ typedef void (*IIC_F)(void);								// Тип указателя на функц
 // отправлено
 #ifdef I2C_MASTER
 typedef uint8_t (*IIC_EXT)(uint16_t theIdx);
-extern IIC_EXT GetDataFunc;
-extern IIC_F MasterOutFunc;
+extern IIC_EXT I2C_GetDataFunc;
+extern IIC_F I2C_MasterOutFunc;
 #endif
 #ifdef I2C_SLAVE									// Подрбрости в сишнике. 
-extern IIC_F SlaveOutFunc;
+extern IIC_F I2C_SlaveOutFunc;
 #endif
-extern IIC_F ErrorOutFunc;
+extern IIC_F I2C_ErrorOutFunc;
 
 extern uint8_t I2C_State;	
 

@@ -21,18 +21,18 @@ uint8_t I2C_PageAddress[I2C_MAX_PAGE_ADDR_SIZE];	// Буфер адреса ст
 uint8_t I2C_PageAddrIndex;						// Индекс буфера адреса страниц
 uint8_t I2C_PageAddrCount;						// Число байт в адресе страницы для текущего Slave
 
-IIC_EXT GetDataFunc = NULL;
+IIC_EXT I2C_GetDataFunc = NULL;
 #endif
 
 // Указатели выхода из автомата:
 #ifdef I2C_MASTER
-IIC_F MasterOutFunc = &DoNothing;			//  в Master режиме
+IIC_F I2C_MasterOutFunc = &DoNothing;			//  в Master режиме
 #endif
 
 #ifdef I2C_SLAVE
-IIC_F SlaveOutFunc 	= &DoNothing;			//  в режиме Slave
+IIC_F I2C_SlaveOutFunc 	= &DoNothing;			//  в режиме Slave
 #endif
-IIC_F ErrorOutFunc 	= &DoNothing;			//  в результате ошибки в режиме Master
+IIC_F I2C_ErrorOutFunc 	= &DoNothing;			//  в результате ошибки в режиме Master
 
 ISR(TWI_vect) {								
 	// Прерывание TWI Тут наше все.
@@ -78,12 +78,12 @@ ISR(TWI_vect) {
 			// Был послан SLA+W получили ACK, а затем:
 			if (I2C_SAWP == (I2C_State & I2C_TYPE_MSK)) {						// В зависимости от режима
 				// Шлем байт данных
-				if (NULL == GetDataFunc)
+				if (NULL == I2C_GetDataFunc)
 					// Берем из буфера
 					TWDR = I2C_Buffer[I2C_Index];							
 				else
 					// Или обращаемся к callback-функции
-					TWDR = (GetDataFunc)(I2C_Index);
+					TWDR = (I2C_GetDataFunc)(I2C_Index);
 				I2C_Index++;												// Увеличиваем указатель буфера
 				TWCR = 0<<TWSTA|0<<TWSTO|1<<TWINT|I2C_I_AM_SLAVE<<TWEA|1<<TWEN|1<<TWIE;  // Go!
 			}
@@ -114,12 +114,12 @@ ISR(TWI_vect) {
 					TWCR = 0<<TWSTA|1<<TWSTO|1<<TWINT|I2C_I_AM_SLAVE<<TWEA|1<<TWEN|1<<TWIE;	// Шлем Stop
 					MACRO_i2c_WhatDo_MasterOut												// И выходим в обработку стопа
 				} else {
-					if (NULL == GetDataFunc)
+					if (NULL == I2C_GetDataFunc)
 						// Берем из буфера
 						TWDR = I2C_Buffer[I2C_Index];
 					else
 						// Или обращаемся к callback-функции
-						TWDR = (GetDataFunc)(I2C_Index);
+						TWDR = (I2C_GetDataFunc)(I2C_Index);
 					I2C_Index++;
 					TWCR = 0<<TWSTA|0<<TWSTO|1<<TWINT|I2C_I_AM_SLAVE<<TWEA|1<<TWEN|1<<TWIE;  	// Go!
 				}
@@ -351,8 +351,8 @@ void DoNothing(void) {}
 // Настройка режима мастера
 void Init_I2C(void)	{
 	// Включим подтяжку на ноги, вдруг юзер на резисторы пожмотился
-	I2C_PORT |= 1<<I2C_SCL|1<<I2C_SDA;			
-	I2C_DDR &= ~(1<<I2C_SCL|1<<I2C_SDA);
+	I2C_PORT |= 1<<I2C_SCL | 1<<I2C_SDA;			
+	I2C_DDR &= ~(1<<I2C_SCL | 1<<I2C_SDA);
 
 	// Prescaler is 64 (= 4^3 = 4^0b00000011)
 	// TWSR = 1<<TWPS1|1<<TWPS0;				
@@ -378,7 +378,7 @@ void Init_Slave_I2C(IIC_F Addr) {
 	// 1 в нулевом бите означает, что мы отзываемся на широковещательные пакеты
 	TWAR = I2C_ADDRESS;					
 	// Присвоим указателю выхода по слейву функцию выхода
-	SlaveOutFunc = Addr;						
+	I2C_SlaveOutFunc = Addr;						
 	
 	// Включаем агрегат и начинаем слушать шину.
 	TWCR = 0<<TWSTA|0<<TWSTO|0<<TWINT|1<<TWEA|1<<TWEN|1<<TWIE;		

@@ -10,8 +10,9 @@
 #define GRBL_EXT_H_
 
 #include <avr/io.h>
+#include <stdbool.h>
 
-#define GRBL_EXT_MAX_RETRIES   2
+#define GRBL_EXT_I2C_MAX_RETRIES   2
 
 #define GRBL_EXT_ERROR_DDR     DDRB
 #define GRBL_EXT_ERROR_PORT    PORTB
@@ -22,6 +23,6 @@ void grbl_ext_init();
 void grbl_ext_error_on();
 void grbl_ext_error_off();
 
-void spindle_sync_ext(uint8_t state, float rpm);
+void grbl_ext_send_spindle_speed(uint8_t state, float rpm);
 
 #endif /* GRBL_EXT_H_ */

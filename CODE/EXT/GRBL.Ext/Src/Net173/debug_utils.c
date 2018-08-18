@@ -26,6 +26,7 @@ void vInitDebug() {
 void vStartDebug() {
 	xTaskCreate(vDebugInfoTask, "DBG", configMINIMAL_STACK_SIZE, NULL, 1, NULL);
 	xTaskCreate(vShowStatusTask, "STATUS", configMINIMAL_STACK_SIZE, NULL, 1, NULL);
+	vShowStatus(3);
 }
 
 void vDebugInfoTask(void *theParams) {
