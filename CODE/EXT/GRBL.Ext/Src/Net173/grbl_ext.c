@@ -14,9 +14,9 @@
 #include "i2c_utils.h"
 
 void vStart() {
-	vInitI2C();
+	vInitI2CSlave();
 	vInitDebug();
 
-	vStartI2C();
+	vStartI2CSlave();
 	vStartDebug();
 }
